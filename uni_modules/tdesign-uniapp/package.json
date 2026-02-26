@@ -2,7 +2,7 @@
   "name": "tdesign-uniapp",
   "id": "tdesign-uniapp",
   "displayName": "TDesign UniApp",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "author": "novlan1",
   "title": "tdesign-uniapp",
   "description": "TDesign Component for uniapp",
@@ -20,8 +20,8 @@
   "license": "MIT",
   "engines": {
     "node": ">=14",
-    "uni-app": "^3.6.16",
-    "uni-app-x": "^3.6.16"
+    "uni-app": "^3.6.17",
+    "uni-app-x": "^3.6.17"
   },
   "dcloudext": {
     "type": "component-vue",
@@ -58,30 +58,30 @@
       "client": {
         "uni-app": {
           "vue": {
-            "vue2": "-",
-            "vue3": {}
+            "vue2": "√",
+            "vue3": "√"
           },
           "web": {
             "safari": "√",
             "chrome": "√"
           },
           "app": {
-            "vue": "-",
+            "vue": "√",
             "nvue": "-",
-            "android": "-",
-            "ios": "-",
+            "android": "√",
+            "ios": "√",
             "harmony": "-"
           },
           "mp": {
-            "weixin": "-",
-            "alipay": "-",
-            "toutiao": "-",
-            "baidu": "-",
-            "kuaishou": "-",
-            "jd": "-",
+            "weixin": "√",
+            "alipay": "√",
+            "toutiao": "√",
+            "baidu": "√",
+            "kuaishou": "√",
+            "jd": "√",
             "harmony": "-",
-            "qq": "-",
-            "lark": "-"
+            "qq": "√",
+            "lark": "√"
           },
           "quickapp": {
             "huawei": "-",
