@@ -112,6 +112,10 @@ npm run init
 - [Vue 3 文档](https://cn.vuejs.org/)
 - [Vite 文档](https://cn.vitejs.dev/)
 
+## 📱 扫码预览
+
+<img src="./docs/image/tdesign-uniapp-starter-vue3-hx-h5.png" width="300" />
+
 ## 📄 License
 
 [MIT](LICENSE)
