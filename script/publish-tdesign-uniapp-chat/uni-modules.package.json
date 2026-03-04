@@ -2,7 +2,7 @@
   "name": "tdesign-uniapp-chat",
   "id": "tdesign-uniapp-chat",
   "displayName": "TDesign UniApp Chat",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "author": "novlan1",
   "title": "tdesign-uniapp-chat",
   "description": "TDesign Chat Component for uniapp",
@@ -20,8 +20,8 @@
   "license": "MIT",
   "engines": {
     "node": ">=14",
-    "uni-app": "^3.6.16",
-    "uni-app-x": "^3.6.16"
+    "uni-app": "^3.6.17",
+    "uni-app-x": "^3.6.17"
   },
   "dcloudext": {
     "type": "component-vue",
@@ -58,7 +58,7 @@
       "client": {
         "uni-app": {
           "vue": {
-            "vue2": "-",
+            "vue2": "√",
             "vue3": {}
           },
           "web": {
@@ -66,22 +66,22 @@
             "chrome": "√"
           },
           "app": {
-            "vue": "-",
+            "vue": "√",
             "nvue": "-",
-            "android": "-",
-            "ios": "-",
+            "android": "√",
+            "ios": "√",
             "harmony": "-"
           },
           "mp": {
-            "weixin": "-",
-            "alipay": "-",
-            "toutiao": "-",
-            "baidu": "-",
-            "kuaishou": "-",
-            "jd": "-",
+            "weixin": "√",
+            "alipay": "√",
+            "toutiao": "√",
+            "baidu": "√",
+            "kuaishou": "√",
+            "jd": "√",
             "harmony": "-",
-            "qq": "-",
-            "lark": "-"
+            "qq": "√",
+            "lark": "√"
           },
           "quickapp": {
             "huawei": "-",

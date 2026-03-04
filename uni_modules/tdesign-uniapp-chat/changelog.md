@@ -1,3 +1,7 @@
+## 0.2.1（2026-03-04）
+### Features
+
+- `ChatThinking`: 新增 `content` 插槽 @zydemail ([#4270](https://github.com/Tencent/tdesign-miniprogram/pull/4270))
 ## 0.2.0（2026-02-02）
 ### Features
 
