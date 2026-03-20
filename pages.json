@@ -173,6 +173,9 @@
 		},
 		{
 			"path": "pages-more/watermark/watermark"
+		},
+		{
+			"path": "pages-more/config-provider/config-provider"
 		}
 	],
 	"subPackages": [
@@ -356,7 +359,7 @@
 	"globalStyle": {
 		"pageOrientation": "portrait",
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "TDesign Uniapp",
+		"navigationBarTitleText": "TDesign UniApp",
 		"backgroundColor": "#F8F8F8",
 		"navigationStyle": "custom"
 	},
@@ -558,6 +561,10 @@
 			{
 				"name": "watermark",
 				"pathName": "pages-more/watermark/watermark"
+			},
+			{
+				"name": "config-provider",
+				"pathName": "pages-more/config-provider/config-provider"
 			},
 			{
 				"name": "action-sheet",
