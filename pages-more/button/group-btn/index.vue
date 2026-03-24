@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import TButton from '@tdesign/uniapp/button/button.vue';
-import { canUseVirtualHost } from '@tdesign/uniapp/common/version';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import { canUseVirtualHost } from '../../../uni_modules/tdesign-uniapp/components/common/version';
 
 
 export default {

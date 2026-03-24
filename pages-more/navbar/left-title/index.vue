@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import TNavbar from '@tdesign/uniapp/navbar/navbar.vue';
+import TNavbar from '../../../uni_modules/tdesign-uniapp/components/navbar/navbar.vue';
 export default {
   components: {
     TNavbar,

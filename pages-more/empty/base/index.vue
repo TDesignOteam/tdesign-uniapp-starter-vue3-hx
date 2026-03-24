@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import TEmpty from '@tdesign/uniapp/empty/empty.vue';
+import TEmpty from '../../../uni_modules/tdesign-uniapp/components/empty/empty.vue';
 export default {
   components: {
     TEmpty,

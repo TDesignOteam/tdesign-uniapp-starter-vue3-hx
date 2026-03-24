@@ -125,11 +125,11 @@
 </template>
 
 <script>
-import TBadge from '@tdesign/uniapp/badge/badge.vue';
-import TCell from '@tdesign/uniapp/cell/cell.vue';
-import TIcon from '@tdesign/uniapp/icon/icon.vue';
-import TButton from '@tdesign/uniapp/button/button.vue';
-import SkylineBehavior from '@tdesign/uniapp/mixins/skyline.js';
+import TBadge from '../../../uni_modules/tdesign-uniapp/components/badge/badge.vue';
+import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import SkylineBehavior from '../../../uni_modules/tdesign-uniapp/components/mixins/skyline.js';
 
 export default {
   options: {

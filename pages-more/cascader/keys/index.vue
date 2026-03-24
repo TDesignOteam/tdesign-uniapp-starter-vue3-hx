@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import TCell from '@tdesign/uniapp/cell/cell.vue';
-import TCascader from '@tdesign/uniapp/cascader/cascader.vue';
+import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
+import TCascader from '../../../uni_modules/tdesign-uniapp/components/cascader/cascader.vue';
 const data = {
   areaList: [
     {

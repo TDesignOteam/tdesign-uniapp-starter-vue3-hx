@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TColorPicker from '@tdesign/uniapp/color-picker/color-picker.vue';
+import TColorPicker from '../../../uni_modules/tdesign-uniapp/components/color-picker/color-picker.vue';
 export default {
   components: {
     TColorPicker,

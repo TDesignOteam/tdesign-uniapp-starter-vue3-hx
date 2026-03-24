@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import TConfigProvider from '@tdesign/uniapp/config-provider/config-provider.vue';
-import TChatThinking from '@tdesign/uniapp-chat/chat-thinking/chat-thinking.vue';
-import enUS from '@tdesign/uniapp/locale/en_US';
+import TConfigProvider from '../../../uni_modules/tdesign-uniapp/components/config-provider/config-provider.vue';
+import TChatThinking from '../../../uni_modules/tdesign-uniapp-chat/components/chat-thinking/chat-thinking.vue';
+import enUS from '../../../uni_modules/tdesign-uniapp/components/locale/en_US';
 
 export default {
   components: {

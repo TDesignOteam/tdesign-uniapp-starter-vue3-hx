@@ -28,10 +28,10 @@
 </template>
 
 <script>
-import TButton from '@tdesign/uniapp/button/button.vue';
-import TToast from '@tdesign/uniapp/toast/toast.vue';
-import TImageViewer from '@tdesign/uniapp/image-viewer/image-viewer.vue';
-import Toast from '@tdesign/uniapp/toast/index';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
+import TImageViewer from '../../../uni_modules/tdesign-uniapp/components/image-viewer/image-viewer.vue';
+import Toast from '../../../uni_modules/tdesign-uniapp/components/toast/index';
 export default {
   components: {
     TButton,

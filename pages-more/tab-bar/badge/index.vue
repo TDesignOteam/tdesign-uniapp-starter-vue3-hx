@@ -119,8 +119,8 @@
 </template>
 
 <script>
-import TTabBar from '@tdesign/uniapp/tab-bar/tab-bar.vue';
-import TTabBarItem from '@tdesign/uniapp/tab-bar-item/tab-bar-item.vue';
+import TTabBar from '../../../uni_modules/tdesign-uniapp/components/tab-bar/tab-bar.vue';
+import TTabBarItem from '../../../uni_modules/tdesign-uniapp/components/tab-bar-item/tab-bar-item.vue';
 export default {
   components: {
     TTabBar,

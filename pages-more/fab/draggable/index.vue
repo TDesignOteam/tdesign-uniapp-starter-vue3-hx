@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import TFab from '@tdesign/uniapp/fab/fab.vue';
+import TFab from '../../../uni_modules/tdesign-uniapp/components/fab/fab.vue';
 export default {
   components: {
     TFab,

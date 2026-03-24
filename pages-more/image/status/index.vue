@@ -72,8 +72,8 @@
 </template>
 
 <script>
-import TImage from '@tdesign/uniapp/image/image.vue';
-import TLoading from '@tdesign/uniapp/loading/loading.vue';
+import TImage from '../../../uni_modules/tdesign-uniapp/components/image/image.vue';
+import TLoading from '../../../uni_modules/tdesign-uniapp/components/loading/loading.vue';
 export default {
   components: {
     TImage,

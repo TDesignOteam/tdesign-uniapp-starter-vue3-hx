@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import TSwipeCell from '@tdesign/uniapp/swipe-cell/swipe-cell.vue';
-import TCell from '@tdesign/uniapp/cell/cell.vue';
+import TSwipeCell from '../../../uni_modules/tdesign-uniapp/components/swipe-cell/swipe-cell.vue';
+import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
 export default {
   components: {
     TSwipeCell,

@@ -29,8 +29,8 @@
 
 <script>
 
-import TButton from '@tdesign/uniapp/button/button.vue';
-import TResult from '@tdesign/uniapp/result/result.vue';
+import TButton from '../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TResult from '../../uni_modules/tdesign-uniapp/components/result/result.vue';
 export default {
   components: {
     TButton,

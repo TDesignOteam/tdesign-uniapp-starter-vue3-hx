@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import TResult from '@tdesign/uniapp/result/result.vue';
+import TResult from '../../../uni_modules/tdesign-uniapp/components/result/result.vue';
 export default {
   options: {
     styleIsolation: 'shared',

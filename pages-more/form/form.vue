@@ -61,10 +61,10 @@
 
 import HorizontalDemo from './horizontal/index.vue';
 import VerticalDemo from './vertical/index.vue';
-import TButton from '@tdesign/uniapp/button/button.vue';
-import TCell from '@tdesign/uniapp/cell/cell.vue';
-import TSwitch from '@tdesign/uniapp/switch/switch.vue';
-import { canUseVirtualHost } from '@tdesign/uniapp/common/version';
+import TButton from '../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TCell from '../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
+import TSwitch from '../../uni_modules/tdesign-uniapp/components/switch/switch.vue';
+import { canUseVirtualHost } from '../../uni_modules/tdesign-uniapp/components/common/version';
 
 export default {
   components: {

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TChatLoading from '@tdesign/uniapp-chat/chat-loading/chat-loading.vue';
+import TChatLoading from '../../../uni_modules/tdesign-uniapp-chat/components/chat-loading/chat-loading.vue';
 export default {
   components: {
     TChatLoading,

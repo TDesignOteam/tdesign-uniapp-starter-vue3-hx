@@ -52,9 +52,9 @@
 </template>
 
 <script>
-import TFab from '@tdesign/uniapp/fab/fab.vue';
-import TIcon from '@tdesign/uniapp/icon/icon.vue';
-import pageScrollMixin from '@tdesign/uniapp/mixins/page-scroll';
+import TFab from '../../../uni_modules/tdesign-uniapp/components/fab/fab.vue';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import pageScrollMixin from '../../../uni_modules/tdesign-uniapp/components/mixins/page-scroll';
 
 
 export default {

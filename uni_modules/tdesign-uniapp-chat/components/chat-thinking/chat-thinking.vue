@@ -47,11 +47,11 @@
 </template>
 <script>
 import TChatLoading from '../chat-loading/chat-loading.vue';
-import TIcon from '@tdesign/uniapp/icon/icon.vue';
-import { prefix } from '@tdesign/uniapp/common/config';
+import TIcon from '../../../tdesign-uniapp/components/icon/icon.vue';
+import { prefix } from '../../../tdesign-uniapp/components/common/config';
 import props from './props';
-import tools from '@tdesign/uniapp/common/utils.wxs';
-import { uniComponent } from '@tdesign/uniapp/common/src/index';
+import tools from '../../../tdesign-uniapp/components/common/utils.wxs';
+import { uniComponent } from '../../../tdesign-uniapp/components/common/src/index';
 
 
 import usingConfig from '../mixins/using-config';

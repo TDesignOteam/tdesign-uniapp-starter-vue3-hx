@@ -66,11 +66,11 @@
 </template>
 
 <script>
-import TRadioGroup from '@tdesign/uniapp/radio-group/radio-group.vue';
-import TRadio from '@tdesign/uniapp/radio/radio.vue';
-import TIcon from '@tdesign/uniapp/icon/icon.vue';
-import { canUseVirtualHost } from '@tdesign/uniapp/common/version';
-import tools from '@tdesign/uniapp/common/utils.wxs';
+import TRadioGroup from '../../../uni_modules/tdesign-uniapp/components/radio-group/radio-group.vue';
+import TRadio from '../../../uni_modules/tdesign-uniapp/components/radio/radio.vue';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import { canUseVirtualHost } from '../../../uni_modules/tdesign-uniapp/components/common/version';
+import tools from '../../../uni_modules/tdesign-uniapp/components/common/utils.wxs';
 
 
 export default {

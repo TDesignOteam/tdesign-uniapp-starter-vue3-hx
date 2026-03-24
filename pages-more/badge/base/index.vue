@@ -80,9 +80,9 @@
 </template>
 
 <script>
-import TBadge from '@tdesign/uniapp/badge/badge.vue';
-import TIcon from '@tdesign/uniapp/icon/icon.vue';
-import TButton from '@tdesign/uniapp/button/button.vue';
+import TBadge from '../../../uni_modules/tdesign-uniapp/components/badge/badge.vue';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 export default {
   options: {
     styleIsolation: 'shared',

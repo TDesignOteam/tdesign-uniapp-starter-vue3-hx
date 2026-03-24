@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import TQrcode from '@tdesign/uniapp/qrcode/qrcode.vue';
+import TQrcode from '../../../uni_modules/tdesign-uniapp/components/qrcode/qrcode.vue';
 export default {
   name: 'QRCodeColor',
   components: {

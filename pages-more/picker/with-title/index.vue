@@ -52,9 +52,9 @@
 </template>
 
 <script>
-import TCell from '@tdesign/uniapp/cell/cell.vue';
-import TPicker from '@tdesign/uniapp/picker/picker.vue';
-import TPickerItem from '@tdesign/uniapp/picker-item/picker-item.vue';
+import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
+import TPicker from '../../../uni_modules/tdesign-uniapp/components/picker/picker.vue';
+import TPickerItem from '../../../uni_modules/tdesign-uniapp/components/picker-item/picker-item.vue';
 export default {
   options: {
     styleIsolation: 'shared',

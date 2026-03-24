@@ -51,11 +51,11 @@
 </template>
 <script>
 import ChatMessage from '../chat-message/chat-message.vue';
-import { prefix } from '@tdesign/uniapp/common/config';
+import { prefix } from '../../../tdesign-uniapp/components/common/config';
 import props from './props';
 
-import tools from '@tdesign/uniapp/common/utils.wxs';
-import { uniComponent } from '@tdesign/uniapp/common/src/index';
+import tools from '../../../tdesign-uniapp/components/common/utils.wxs';
+import { uniComponent } from '../../../tdesign-uniapp/components/common/src/index';
 
 
 const name = `${prefix}-chat-list`;

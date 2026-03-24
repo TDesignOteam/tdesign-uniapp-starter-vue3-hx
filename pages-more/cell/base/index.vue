@@ -55,9 +55,9 @@
 </template>
 
 <script>
-import TCell from '@tdesign/uniapp/cell/cell.vue';
-import TBadge from '@tdesign/uniapp/badge/badge.vue';
-import TSwitch from '@tdesign/uniapp/switch/switch.vue';
+import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
+import TBadge from '../../../uni_modules/tdesign-uniapp/components/badge/badge.vue';
+import TSwitch from '../../../uni_modules/tdesign-uniapp/components/switch/switch.vue';
 export default {
   components: {
     TCell,

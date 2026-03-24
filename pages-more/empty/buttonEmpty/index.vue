@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import TEmpty from '@tdesign/uniapp/empty/empty.vue';
-import TButton from '@tdesign/uniapp/button/button.vue';
+import TEmpty from '../../../uni_modules/tdesign-uniapp/components/empty/empty.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 
 
 export default {

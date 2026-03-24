@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import TChatMessage from '@tdesign/uniapp-chat/chat-message/chat-message.vue';
+import TChatMessage from '../../../uni_modules/tdesign-uniapp-chat/components/chat-message/chat-message.vue';
 
 
 export default {

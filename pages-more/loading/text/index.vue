@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import TLoading from '@tdesign/uniapp/loading/loading.vue';
+import TLoading from '../../../uni_modules/tdesign-uniapp/components/loading/loading.vue';
 export default {
   components: {
     TLoading,

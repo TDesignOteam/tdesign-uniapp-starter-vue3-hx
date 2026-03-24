@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import TLoading from '@tdesign/uniapp/loading/loading.vue';
-import TSlider from '@tdesign/uniapp/slider/slider.vue';
-import SkylineBehavior from '@tdesign/uniapp/mixins/skyline.js';
+import TLoading from '../../../uni_modules/tdesign-uniapp/components/loading/loading.vue';
+import TSlider from '../../../uni_modules/tdesign-uniapp/components/slider/slider.vue';
+import SkylineBehavior from '../../../uni_modules/tdesign-uniapp/components/mixins/skyline.js';
 
 
 export default {

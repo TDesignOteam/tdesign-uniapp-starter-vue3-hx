@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import TStepper from '@tdesign/uniapp/stepper/stepper.vue';
+import TStepper from '../../../uni_modules/tdesign-uniapp/components/stepper/stepper.vue';
 export default {
   components: {
     TStepper,

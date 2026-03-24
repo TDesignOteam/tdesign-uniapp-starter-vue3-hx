@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import TQrcode from '@tdesign/uniapp/qrcode/qrcode.vue';
-import TSlider from '@tdesign/uniapp/slider/slider.vue';
+import TQrcode from '../../../uni_modules/tdesign-uniapp/components/qrcode/qrcode.vue';
+import TSlider from '../../../uni_modules/tdesign-uniapp/components/slider/slider.vue';
 
 export default {
   name: 'QRCodeLevel',

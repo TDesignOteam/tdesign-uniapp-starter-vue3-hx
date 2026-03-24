@@ -4,15 +4,16 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "init": "npm run init:td && npm run init:chat",
+    "init": "npm run init:td && npm run init:chat && npm run init:alias",
     "init:td": "node script/publish-tdesign-uniapp/index.js",
-    "init:chat": "node script/publish-tdesign-uniapp-chat/index.js"
+    "init:chat": "node script/publish-tdesign-uniapp-chat/index.js",
+    "init:alias": "node script/replace-alias/index.js"
   },
   "author": "novlan1",
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "t-comm": "^1.5.14"
+    "t-comm": "^3.1.15"
   },
   "devDependencies": {
     "eslint-config-light": "^1.5.3"

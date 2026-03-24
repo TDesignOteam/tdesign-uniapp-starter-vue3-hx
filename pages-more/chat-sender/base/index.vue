@@ -68,9 +68,9 @@
 </template>
 
 <script>
-import TChatSender from '@tdesign/uniapp-chat/chat-sender/chat-sender.vue';
-import TIcon from '@tdesign/uniapp/icon/icon.vue';
-import Toast from '@tdesign/uniapp/toast/index';
+import TChatSender from '../../../uni_modules/tdesign-uniapp-chat/components/chat-sender/chat-sender.vue';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import Toast from '../../../uni_modules/tdesign-uniapp/components/toast/index';
 
 export default {
   components: {

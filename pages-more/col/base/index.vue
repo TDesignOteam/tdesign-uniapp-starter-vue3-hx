@@ -50,8 +50,8 @@
 </template>
 
 <script>
-import TCol from '@tdesign/uniapp/col/col.vue';
-import TRow from '@tdesign/uniapp/row/row.vue';
+import TCol from '../../../uni_modules/tdesign-uniapp/components/col/col.vue';
+import TRow from '../../../uni_modules/tdesign-uniapp/components/row/row.vue';
 export default {
   components: {
     TCol,

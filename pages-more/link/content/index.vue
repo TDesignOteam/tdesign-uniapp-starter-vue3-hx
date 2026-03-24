@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import TLink from '@tdesign/uniapp/link/link.vue';
+import TLink from '../../../uni_modules/tdesign-uniapp/components/link/link.vue';
 export default {
   components: {
     TLink,

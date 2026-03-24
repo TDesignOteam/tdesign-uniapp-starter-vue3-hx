@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import TButton from '@tdesign/uniapp/button/button.vue';
-import TDrawer from '@tdesign/uniapp/drawer/drawer.vue';
-import SkylineBehavior from '@tdesign/uniapp/mixins/skyline.js';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TDrawer from '../../../uni_modules/tdesign-uniapp/components/drawer/drawer.vue';
+import SkylineBehavior from '../../../uni_modules/tdesign-uniapp/components/mixins/skyline.js';
 
 export default {
   components: {

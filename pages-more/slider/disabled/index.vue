@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import TSlider from '@tdesign/uniapp/slider/slider.vue';
+import TSlider from '../../../uni_modules/tdesign-uniapp/components/slider/slider.vue';
 export default {
   components: {
     TSlider,

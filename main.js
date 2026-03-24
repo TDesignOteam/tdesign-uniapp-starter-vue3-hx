@@ -2,10 +2,10 @@ import App from './App'
 import './style/app.less';
 import DemoBaseMixin from './mixins/demo-base.js';
 
-import TDemo from '@tdesign/uniapp/demo/demo.vue';
-import TNavbar from '@tdesign/uniapp/navbar/navbar.vue';
-import TDemoHeader from '@tdesign/uniapp/demo-header/demo-header.vue';
-import TDemoNavbar from '@tdesign/uniapp/demo-navbar/demo-navbar.vue';
+import TDemo from './uni_modules/tdesign-uniapp/components/demo/demo.vue';
+import TNavbar from './uni_modules/tdesign-uniapp/components/navbar/navbar.vue';
+import TDemoHeader from './uni_modules/tdesign-uniapp/components/demo-header/demo-header.vue';
+import TDemoNavbar from './uni_modules/tdesign-uniapp/components/demo-navbar/demo-navbar.vue';
 
 const chooseImage = uni.chooseImage || {};
 uni.chooseImage = chooseImage;

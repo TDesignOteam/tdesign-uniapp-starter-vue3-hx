@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import TButton from '@tdesign/uniapp/button/button.vue';
-import TInput from '@tdesign/uniapp/input/input.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TInput from '../../../uni_modules/tdesign-uniapp/components/input/input.vue';
 export default {
   components: {
     TButton,

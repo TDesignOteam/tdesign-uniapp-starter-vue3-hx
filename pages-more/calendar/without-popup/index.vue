@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TCalendar from '@tdesign/uniapp/calendar/calendar.vue';
+import TCalendar from '../../../uni_modules/tdesign-uniapp/components/calendar/calendar.vue';
 export default {
   components: {
     TCalendar,

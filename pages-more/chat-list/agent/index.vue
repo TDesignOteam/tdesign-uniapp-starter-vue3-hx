@@ -107,16 +107,16 @@
 </template>
 
 <script>
-import TChatMessage from '@tdesign/uniapp-chat/chat-message/chat-message.vue';
-import TChatContent from '@tdesign/uniapp-chat/chat-content/chat-content.vue';
-import TChatList from '@tdesign/uniapp-chat/chat-list/chat-list.vue';
-import TChatSender from '@tdesign/uniapp-chat/chat-sender/chat-sender.vue';
-import TChatActionbar from '@tdesign/uniapp-chat/chat-actionbar/chat-actionbar.vue';
-import TSteps from '@tdesign/uniapp/steps/steps.vue';
-import TStepItem from '@tdesign/uniapp/step-item/step-item.vue';
-import TIcon from '@tdesign/uniapp/icon/icon.vue';
-import TToast from '@tdesign/uniapp/toast/toast.vue';
-import Toast from '@tdesign/uniapp/toast/index';
+import TChatMessage from '../../../uni_modules/tdesign-uniapp-chat/components/chat-message/chat-message.vue';
+import TChatContent from '../../../uni_modules/tdesign-uniapp-chat/components/chat-content/chat-content.vue';
+import TChatList from '../../../uni_modules/tdesign-uniapp-chat/components/chat-list/chat-list.vue';
+import TChatSender from '../../../uni_modules/tdesign-uniapp-chat/components/chat-sender/chat-sender.vue';
+import TChatActionbar from '../../../uni_modules/tdesign-uniapp-chat/components/chat-actionbar/chat-actionbar.vue';
+import TSteps from '../../../uni_modules/tdesign-uniapp/components/steps/steps.vue';
+import TStepItem from '../../../uni_modules/tdesign-uniapp/components/step-item/step-item.vue';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
+import Toast from '../../../uni_modules/tdesign-uniapp/components/toast/index';
 import { getNavigationBarHeight } from '../utils';
 
 let uniqueId = 0;

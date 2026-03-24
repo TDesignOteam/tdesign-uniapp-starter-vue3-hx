@@ -218,12 +218,12 @@
 </template>
 
 <script>
-import TGuide from '@tdesign/uniapp/guide/guide.vue';
-import TInput from '@tdesign/uniapp/input/input.vue';
-import TIcon from '@tdesign/uniapp/icon/icon.vue';
-import TButton from '@tdesign/uniapp/button/button.vue';
-import { getRect } from '@tdesign/uniapp/common/utils';
-import { canUseVirtualHost } from '@tdesign/uniapp/common/version';
+import TGuide from '../../../uni_modules/tdesign-uniapp/components/guide/guide.vue';
+import TInput from '../../../uni_modules/tdesign-uniapp/components/input/input.vue';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import { getRect } from '../../../uni_modules/tdesign-uniapp/components/common/utils';
+import { canUseVirtualHost } from '../../../uni_modules/tdesign-uniapp/components/common/version';
 
 
 export default {

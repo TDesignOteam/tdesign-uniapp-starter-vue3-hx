@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TSearch from '@tdesign/uniapp/search/search.vue';
+import TSearch from '../../../uni_modules/tdesign-uniapp/components/search/search.vue';
 export default {
   components: {
     TSearch,

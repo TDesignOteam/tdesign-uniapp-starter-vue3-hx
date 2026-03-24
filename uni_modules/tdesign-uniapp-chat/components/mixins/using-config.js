@@ -2,9 +2,9 @@
  * 提供子组件从 config-provider 获取全局配置的能力
  * chat 版直接引用 uniapp-components 的基础设施
  */
-import { getComponentLocale, useConfig } from '@tdesign/uniapp/config-provider/use-config';
-import { toCamel } from '@tdesign/uniapp/common/utils';
-import defaultLocale from '@tdesign/uniapp/locale/zh_CN';
+import { getComponentLocale, useConfig } from '../../../tdesign-uniapp/components/config-provider/use-config';
+import { toCamel } from '../../../tdesign-uniapp/components/common/utils';
+import defaultLocale from '../../../tdesign-uniapp/components/locale/zh_CN';
 
 export default function usingConfig(options) {
   const { componentName, localeTextPropName } = options;

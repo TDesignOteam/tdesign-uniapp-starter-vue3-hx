@@ -26,8 +26,8 @@
 </template>
 
 <script>
-// import TBadge from '@tdesign/uniapp/badge/badge.vue';
-import TAvatar from '@tdesign/uniapp/avatar/avatar.vue';
+// import TBadge from '../../../uni_modules/tdesign-uniapp/components/badge/badge.vue';
+import TAvatar from '../../../uni_modules/tdesign-uniapp/components/avatar/avatar.vue';
 export default {
   components: {
     // TBadge,

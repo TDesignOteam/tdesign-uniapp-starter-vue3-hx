@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import TImage from '@tdesign/uniapp/image/image.vue';
+import TImage from '../../../uni_modules/tdesign-uniapp/components/image/image.vue';
 export default {
   components: {
     TImage,

@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import TRate from '@tdesign/uniapp/rate/rate.vue';
+import TRate from '../../../uni_modules/tdesign-uniapp/components/rate/rate.vue';
 export default {
   components: {
     TRate,

@@ -37,9 +37,9 @@
 </template>
 
 <script>
-import ActionSheet, { ActionSheetTheme } from '@tdesign/uniapp/action-sheet/index';
-import TActionSheet from '@tdesign/uniapp/action-sheet/action-sheet.vue';
-import TButton from '@tdesign/uniapp/button/button.vue';
+import ActionSheet, { ActionSheetTheme } from '../../../uni_modules/tdesign-uniapp/components/action-sheet/index';
+import TActionSheet from '../../../uni_modules/tdesign-uniapp/components/action-sheet/action-sheet.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 
 
 const firstGrid = [

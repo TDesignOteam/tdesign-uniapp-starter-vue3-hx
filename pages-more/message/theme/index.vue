@@ -53,9 +53,9 @@
 </template>
 
 <script>
-import TButton from '@tdesign/uniapp/button/button.vue';
-import TMessage from '@tdesign/uniapp/message/message.vue';
-import Message from '@tdesign/uniapp/message/index';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TMessage from '../../../uni_modules/tdesign-uniapp/components/message/message.vue';
+import Message from '../../../uni_modules/tdesign-uniapp/components/message/index';
 export default {
   components: {
     TButton,

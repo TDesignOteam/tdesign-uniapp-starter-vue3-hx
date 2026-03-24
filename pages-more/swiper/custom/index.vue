@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import TSwiper from '@tdesign/uniapp/swiper/swiper.vue';
+import TSwiper from '../../../uni_modules/tdesign-uniapp/components/swiper/swiper.vue';
 const imageCdn = 'https://tdesign.gtimg.com/mobile/demos';
 const swiperList = [
   {

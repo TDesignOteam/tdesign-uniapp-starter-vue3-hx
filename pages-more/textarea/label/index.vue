@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TTextarea from '@tdesign/uniapp/textarea/textarea.vue';
+import TTextarea from '../../../uni_modules/tdesign-uniapp/components/textarea/textarea.vue';
 export default {
   options: {
     styleIsolation: 'shared',

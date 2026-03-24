@@ -39,9 +39,9 @@
 </template>
 
 <script>
-import TGrid from '@tdesign/uniapp/grid/grid.vue';
-import TGridItem from '@tdesign/uniapp/grid-item/grid-item.vue';
-import TButton from '@tdesign/uniapp/button/button.vue';
+import TGrid from '../../../uni_modules/tdesign-uniapp/components/grid/grid.vue';
+import TGridItem from '../../../uni_modules/tdesign-uniapp/components/grid-item/grid-item.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 export default {
   options: {
     styleIsolation: 'shared',

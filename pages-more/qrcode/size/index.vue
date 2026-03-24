@@ -29,8 +29,8 @@
 </template>
 
 <script>
-import TQrcode from '@tdesign/uniapp/qrcode/qrcode.vue';
-import TButton from '@tdesign/uniapp/button/button.vue';
+import TQrcode from '../../../uni_modules/tdesign-uniapp/components/qrcode/qrcode.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 
 
 export default {

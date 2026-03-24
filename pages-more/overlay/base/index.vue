@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import TOverlay from '@tdesign/uniapp/overlay/overlay.vue';
-import TButton from '@tdesign/uniapp/button/button.vue';
+import TOverlay from '../../../uni_modules/tdesign-uniapp/components/overlay/overlay.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 export default {
   components: {
     TOverlay,

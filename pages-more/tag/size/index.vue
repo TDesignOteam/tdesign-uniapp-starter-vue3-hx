@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import TTag from '@tdesign/uniapp/tag/tag.vue';
+import TTag from '../../../uni_modules/tdesign-uniapp/components/tag/tag.vue';
 export default {
   options: {
     styleIsolation: 'shared',

@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import TChatActionbar from '@tdesign/uniapp-chat/chat-actionbar/chat-actionbar.vue';
-import TToast from '@tdesign/uniapp/toast/toast.vue';
-import Toast from '@tdesign/uniapp/toast/index';
+import TChatActionbar from '../../../uni_modules/tdesign-uniapp-chat/components/chat-actionbar/chat-actionbar.vue';
+import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
+import Toast from '../../../uni_modules/tdesign-uniapp/components/toast/index';
 
 export default {
   components: {

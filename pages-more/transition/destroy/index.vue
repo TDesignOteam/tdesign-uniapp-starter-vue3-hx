@@ -21,8 +21,8 @@
 
 <script>
 
-import TButton from '@tdesign/uniapp/button/button.vue';
-import TTransition from '@tdesign/uniapp/transition/transition.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TTransition from '../../../uni_modules/tdesign-uniapp/components/transition/transition.vue';
 export default {
   components: {
     TButton,

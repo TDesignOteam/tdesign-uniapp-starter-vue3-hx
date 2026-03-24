@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import TSkeleton from '@tdesign/uniapp/skeleton/skeleton.vue';
+import TSkeleton from '../../../uni_modules/tdesign-uniapp/components/skeleton/skeleton.vue';
 export default {
   components: {
     TSkeleton,

@@ -63,9 +63,9 @@
 </template>
 
 <script>
-import TSwipeCell from '@tdesign/uniapp/swipe-cell/swipe-cell.vue';
-import TCell from '@tdesign/uniapp/cell/cell.vue';
-import TIcon from '@tdesign/uniapp/icon/icon.vue';
+import TSwipeCell from '../../../uni_modules/tdesign-uniapp/components/swipe-cell/swipe-cell.vue';
+import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
 export default {
   options: {
     styleIsolation: 'shared',
