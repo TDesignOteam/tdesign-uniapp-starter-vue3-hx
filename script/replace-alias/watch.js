@@ -2,27 +2,10 @@ const chokidar = require('chokidar');
 const path = require('path');
 const net = require('net');
 const { replaceAliasInFile } = require('t-comm/lib/replace-alias');
+const { ROOT_DIR, ALIAS_MAP, SUPPORTED_EXTENSIONS, SCAN_DIRS, SCAN_ROOT_FILES } = require('./config');
 
 // 监听端口（防止重复启动）
 const PORT = 12346;
-
-// 项目根目录
-const ROOT_DIR = path.resolve(__dirname, '../../');
-
-// alias 映射关系
-const ALIAS_MAP = {
-  '@tdesign/uniapp': 'uni_modules/tdesign-uniapp/components',
-  '@tdesign/uniapp-chat': 'uni_modules/tdesign-uniapp-chat/components',
-};
-
-// 支持的文件扩展名
-const SUPPORTED_EXTENSIONS = ['.vue', '.js', '.ts', '.less', '.css', '.scss'];
-
-// 需要监听的目录（相对于项目根目录）
-const SCAN_DIRS = ['style', 'pages', 'pages-more', 'components', 'mixins', 'uni_modules/tdesign-uniapp-chat/components'];
-
-// 需要监听的根目录文件
-const SCAN_ROOT_FILES = ['main.js', 'App.vue'];
 
 // 构建 glob 模式（使用正斜杠，兼容 chokidar）
 function buildGlobPatterns() {

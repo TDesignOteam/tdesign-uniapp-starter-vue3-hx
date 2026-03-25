@@ -61,7 +61,19 @@ npm install
 npm run init
 ```
 
-> 💡 该命令会同时初始化 tdesign-uniapp 和 tdesign-uniapp-chat 两个插件
+该命令会依次执行以下步骤：
+
+1. `npm run init:td` — 发布/同步 `tdesign-uniapp` 组件到 `uni_modules` 目录
+2. `npm run init:chat` — 发布/同步 `tdesign-uniapp-chat` 组件到 `uni_modules` 目录
+3. `npm run init:alias` — 全量替换项目中的 alias 路径为相对路径
+
+### 开发模式（监听文件变化）
+
+```bash
+npm run watch
+```
+
+启动后会实时监听项目文件变化，自动将 alias 路径替换为相对路径。适用于开发阶段边写代码边自动替换。
 
 ## 📦 发布插件
 
@@ -83,24 +95,72 @@ npm run init
 2. 不要用 🐞 🚧 这种图片，否则更新日志完全无法显示
 3. 多个标题要换行，即第二个以及后面的 `###`
 
-## 📁 项目结构
+## 脚本说明
+
+| 命令 | 说明 |
+|---|---|
+| `npm run init` | 完整初始化（同步组件 + 替换 alias） |
+| `npm run init:td` | 同步 tdesign-uniapp 组件到 uni_modules |
+| `npm run init:chat` | 同步 tdesign-uniapp-chat 组件到 uni_modules |
+| `npm run init:alias` | 全量扫描并替换 alias 路径 |
+| `npm run watch` | 监听文件变化，自动替换 alias 路径 |
+
+## Alias 替换机制
+
+项目中使用 alias 来简化组件引用路径，脚本会自动将 alias 替换为对应的相对路径。
+
+### Alias 映射关系
+
+| Alias | 对应目录 |
+|---|---|
+| `@tdesign/uniapp` | `uni_modules/tdesign-uniapp/components` |
+| `@tdesign/uniapp-chat` | `uni_modules/tdesign-uniapp-chat/components` |
+
+### 扫描范围
+
+**目录：**
+
+- `style/`
+- `pages/`
+- `pages-more/`
+- `components/`
+- `mixins/`
+- `uni_modules/tdesign-uniapp-chat/components/`
+
+**根目录文件：**
+
+- `main.js`
+- `App.vue`
+
+**支持的文件类型：**
+
+`.vue`、`.js`、`.ts`、`.d.ts`、`.less`、`.css`、`.scss`
+
+### 全量替换 vs 监听替换
+
+- **全量替换**（`npm run init:alias`）：一次性扫描所有目标文件并替换 alias，适用于初始化或批量处理。
+- **监听替换**（`npm run watch`）：使用 chokidar 监听文件变化，当文件新增或修改时自动对**单个文件**进行 alias 替换。内置防重复启动（端口 12346）和防循环写入机制。
+
+## 项目结构
 
 ```
-├── App.vue                 # 根组件
-├── main.js                 # 入口文件
-├── pages.json              # 页面路由配置
-├── manifest.json           # 应用配置
-├── uni.scss                # uni-app 全局样式变量
-├── vite.config.js          # Vite 配置
-├── index.html              # H5 入口
-├── static/                 # 静态资源
-├── script/                 # 脚本工具
-│   ├── publish-tdesign-uniapp/       # tdesign-uniapp 发布脚本
-│   └── publish-tdesign-uniapp-chat/  # tdesign-uniapp-chat 发布脚本
-├── uni_modules/
-│   ├── tdesign-uniapp/               # TDesign 组件库
-│   └── tdesign-uniapp-chat/          # TDesign Chat 组件库
-└── package.json            # 项目依赖
+├── components/         # 公共组件
+├── mixins/             # 混入
+├── pages/              # 主包页面
+├── pages-more/         # 分包页面
+├── style/              # 公共样式
+├── uni_modules/        # uni-app 插件模块
+│   ├── tdesign-uniapp/           # TDesign 基础组件库
+│   └── tdesign-uniapp-chat/      # TDesign Chat 组件库
+├── script/             # 构建/工具脚本
+│   ├── publish-tdesign-uniapp/   # tdesign-uniapp 发布脚本
+│   ├── publish-tdesign-uniapp-chat/ # tdesign-uniapp-chat 发布脚本
+│   └── replace-alias/            # alias 替换脚本
+│       ├── index.js              # 全量替换
+│       └── watch.js              # 监听替换
+├── App.vue
+├── main.js
+└── package.json
 ```
 
 ## 🔗 相关链接
