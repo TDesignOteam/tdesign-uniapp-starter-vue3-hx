@@ -1,4 +1,4 @@
-const watch = require('gulp-watch');
+const chokidar = require('chokidar');
 const path = require('path');
 const net = require('net');
 const { replaceAliasInFile } = require('t-comm/lib/replace-alias');
@@ -24,17 +24,18 @@ const SCAN_DIRS = ['style', 'pages', 'pages-more', 'components', 'mixins', 'uni_
 // 需要监听的根目录文件
 const SCAN_ROOT_FILES = ['main.js', 'App.vue'];
 
-// 构建 glob 模式
+// 构建 glob 模式（使用正斜杠，兼容 chokidar）
 function buildGlobPatterns() {
   const extGlob = `**/*{${SUPPORTED_EXTENSIONS.join(',')}}`;
   const patterns = [];
 
   for (const dir of SCAN_DIRS) {
-    patterns.push(path.join(ROOT_DIR, dir, extGlob));
+    // 使用正斜杠拼接路径，避免 Windows 下的反斜杠问题
+    patterns.push(`${ROOT_DIR}/${dir}/${extGlob}`);
   }
 
   for (const file of SCAN_ROOT_FILES) {
-    patterns.push(path.join(ROOT_DIR, file));
+    patterns.push(`${ROOT_DIR}/${file}`);
   }
 
   return patterns;
@@ -56,6 +57,32 @@ function gracefulShutdown() {
   process.exit(0);
 }
 
+// 防循环写入：记录最近由脚本自身修改的文件
+const recentlyModified = new Map();
+const DEBOUNCE_MS = 1000;
+
+function handleFileChange(filePath) {
+  const relativePath = path.relative(ROOT_DIR, filePath);
+
+  // 跳过由脚本自身修改触发的二次变化
+  const lastModified = recentlyModified.get(filePath);
+  if (lastModified && Date.now() - lastModified < DEBOUNCE_MS) {
+    return;
+  }
+
+  console.log(`  📝 [${relativePath}] 检测到变化`);
+
+  const { replaced, error } = replaceAliasInFile(filePath, ROOT_DIR, ALIAS_MAP);
+
+  if (error) {
+    console.log(`  ⚠️  [${relativePath}] 替换失败: ${error}`);
+  } else if (replaced) {
+    // 记录该文件刚被脚本修改，防止触发二次处理
+    recentlyModified.set(filePath, Date.now());
+    console.log(`  ✅ [${relativePath}] alias 已替换`);
+  }
+}
+
 async function main() {
   if (await isPortInUse(PORT)) {
     console.log('[Watch] 监听已在其他终端运行');
@@ -71,26 +98,23 @@ async function main() {
   console.log(`   监听目录: ${SCAN_DIRS.join(', ')}`);
   console.log(`   监听文件: ${SCAN_ROOT_FILES.join(', ')}\n`);
 
-  watch(patterns, (file) => {
-    const { event, history } = file || {};
-
-    if (event === 'unlink') return;
-    if (!history?.[0]) return;
-
-    const filePath = history[0];
-    const relativePath = path.relative(ROOT_DIR, filePath);
-
-    const { replaced, error } = replaceAliasInFile(filePath, ROOT_DIR, ALIAS_MAP);
-
-    if (error) {
-      console.log(`  ⚠️  [${relativePath}] 替换失败: ${error}`);
-    } else if (replaced) {
-      console.log(`  ✅ [${relativePath}] alias 已替换`);
-    }
+  const watcher = chokidar.watch(patterns, {
+    ignoreInitial: true,
+    awaitWriteFinish: {
+      stabilityThreshold: 100,
+      pollInterval: 50,
+    },
   });
 
+  watcher
+    .on('add', handleFileChange)
+    .on('change', handleFileChange);
+
   // 监听进程终止信号
-  process.on('exit', () => server.close());
+  process.on('exit', () => {
+    watcher.close();
+    server.close();
+  });
   process.on('SIGINT', gracefulShutdown);
   process.on('SIGTERM', gracefulShutdown);
 }
