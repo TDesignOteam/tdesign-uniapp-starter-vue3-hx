@@ -1,1 +1,0 @@
-async function n({canvas:n,src:o}){let r=null;return o&&n?(r=new Promise(((n,r)=>{const s=new Image;s.crossOrigin="anonymous",s.onload=()=>n(s),s.onerror=n=>{console.error("图标加载失败:",n),r(n)},s.src=o})),r):r}export{n as l};
