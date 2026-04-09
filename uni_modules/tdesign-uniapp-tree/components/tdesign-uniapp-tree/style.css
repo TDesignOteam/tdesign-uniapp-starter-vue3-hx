@@ -1,0 +1,320 @@
+/* ==================== CSS Design Tokens ==================== */
+/* 
+ * 变量定义在组件根元素 .tdesign-uniapp-tree 上，
+ * 避免 scoped 样式下 :root 不生效的问题，
+ * 同时兼容小程序不支持 :root 的情况。
+ * 
+ * 用户可以在外部通过覆盖这些变量来自定义主题：
+ * .tdesign-uniapp-tree { --td-tree-brand-color: #7c3aed; }
+ */
+.tdesign-uniapp-tree {
+  --td-tree-bg-color: #fff;
+  --td-tree-text-color: #757575;
+  --td-tree-brand-color: #0052d9;
+  --td-tree-border-color: #f5f5f5;
+  --td-tree-line-color: rgba(204, 204, 204, 0.9);
+  --td-tree-disabled-color: #ccc;
+  --td-tree-input-border-color: #f0f0f0;
+  --td-tree-item-height: 80rpx;
+  --td-tree-font-size: 28rpx;
+  --td-tree-bar-font-size: 32rpx;
+  --td-tree-bar-height: 116rpx;
+  --td-tree-bar-title-color: #000;
+  --td-tree-drag-shadow: 6rpx 8rpx 12rpx rgba(0, 0, 0, 0.15);
+  --td-tree-focus-shadow: 0 0 6px 4px rgba(169, 169, 169, 0.15);
+  --td-tree-active-color: var(--td-tree-brand-color);
+  --td-tree-delete-color: #e34d59;
+  --td-tree-empty-color: var(--td-tree-text-color);
+  --td-tree-radius: 24rpx;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.tdesign-uniapp-tree-cnt {
+  position: relative;
+  background-color: var(--td-tree-bg-color);
+  box-sizing: border-box;
+}
+.tdesign-uniapp-tree-cnt-popup {
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: var(--td-tree-radius);
+  border-top-right-radius: var(--td-tree-radius);
+}
+.tdesign-uniapp-tree-cnt-page {
+  position: fixed;
+  top: 0rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  z-index: 997;
+}
+
+.fixed-bottom-bar-popup {
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  z-index: 998;
+}
+.tdesign-uniapp-tree-bar {
+  background-color: var(--td-tree-bg-color);
+  height: var(--td-tree-bar-height);
+  padding: 0 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid var(--td-tree-border-color);
+  font-size: var(--td-tree-bar-font-size);
+  color: var(--td-tree-text-color);
+  line-height: 1;
+  position: relative;
+}
+.tdesign-uniapp-tree-bar-left,
+.tdesign-uniapp-tree-bar-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.tdesign-uniapp-tree-bar-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--td-tree-bar-font-size);
+  font-weight: 600;
+  color: var(--td-tree-bar-title-color);
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tdesign-uniapp-tree-bar-cancel {
+  font-size: var(--td-tree-bar-font-size);
+  color: var(--td-tree-text-color);
+}
+.tdesign-uniapp-tree-bar-action {
+  font-size: var(--td-tree-bar-font-size);
+  color: var(--td-tree-text-color);
+  margin-right: 32rpx;
+}
+.tdesign-uniapp-tree-bar-confirm {
+  font-size: var(--td-tree-bar-font-size);
+  font-weight: 600;
+  color: var(--td-tree-brand-color);
+}
+.tdesign-uniapp-tree-view {
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  top: var(--td-tree-bar-height);
+  background-color: var(--td-tree-bg-color);
+  padding-top: 0;
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+  padding-left: 20rpx;
+}
+.tdesign-uniapp-tree-view-sc {
+  height: 100%;
+  overflow: hidden;
+}
+.tdesign-uniapp-tree-view-sc .empty {
+	text-align: center;
+	color: var(--td-tree-empty-color);
+	padding: 30rpx;
+}
+.tdesign-uniapp-tree-item-block {
+
+}
+.tdesign-uniapp-tree-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--td-tree-font-size);
+  color: var(--td-tree-text-color);
+  line-height: 1;
+  height: 0;
+  opacity: 0;
+  transition: height 0.25s ease-out, opacity 0.25s ease-out;
+  position: relative;
+  overflow: hidden;
+  pointer-events: none;
+}
+.tdesign-uniapp-tree-item.no-transition {
+  transition: none;
+}
+.tdesign-uniapp-tree-item .icon-btn {
+	font-size: 30rpx;
+	margin-right: 20rpx;
+}
+.tdesign-uniapp-tree-item .drag-box {
+	cursor: pointer;
+}
+.tdesign-uniapp-tree-item .focus-item-line {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1rpx;
+}
+.drag-box .icon-drag-btn {
+	font-size: 40rpx;
+	margin: 0 12rpx;
+}
+.tdesign-uniapp-tree-item .left-line {
+	position: relative;
+	width: 1rpx;
+	height: 100%;
+	box-sizing: border-box;
+}
+.tdesign-uniapp-tree-item .left-line::before {
+	position: absolute;
+	content: "";
+	width: 1rpx;
+	height: 100%;
+	background-color: var(--td-tree-line-color);
+	box-sizing: border-box;
+	left: -18rpx;
+}
+.tdesign-uniapp-tree-item .parent-horizontal-line {
+	width: 1rpx;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0rpx;
+	box-sizing: border-box;
+	background-color: var(--td-tree-line-color);
+}
+.tdesign-uniapp-tree-item .left-line .horizontal-line {
+	width: 20rpx;
+	height: 1rpx;
+	position: absolute;
+	top: 40rpx;
+	left: 0rpx;
+	background-color: var(--td-tree-line-color);
+	box-sizing: border-box;
+}
+
+.tdesign-uniapp-tree-item.show {
+  height: var(--td-tree-item-height);
+  opacity: 1;
+  pointer-events: auto;
+}
+.tdesign-uniapp-tree-item.showchild:before {
+  transform: rotate(90deg);
+}
+.tdesign-uniapp-tree-item.border {
+  border-bottom: 1rpx solid rgba(204, 204, 204, 0.2);
+}
+.tdesign-uniapp-tree-item.last:before {
+  opacity: 0;
+}
+.tdesign-uniapp-tree-item.active {
+  background-color: rgba(0, 82, 217, 0.08);
+  color: var(--td-tree-active-color);
+}
+.tdesign-uniapp-tree-item.disabled {
+  color: var(--td-tree-disabled-color) !important;
+}
+.tdesign-uniapp-tree-item.focus {
+	box-shadow: var(--td-tree-focus-shadow);
+}
+.tdesign-uniapp-tree-icon {
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 8rpx;
+}
+.tdesign-uniapp-tree-label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  line-height: 1.2;
+}
+.tdesign-uniapp-tree-label .horizontal-line-box {
+	display: inline-block;
+	width: 24rpx;
+}
+.tdesign-uniapp-tree-label .label-input {
+	border: 1rpx solid var(--td-tree-input-border-color);
+	border-radius: 10rpx;
+	width: 100%;
+	padding: 12rpx 18rpx;
+	margin-right: 30rpx;
+}
+.tdesign-uniapp-tree-text-active {
+  color: var(--td-tree-active-color);
+}
+.tdesign-uniapp-tree-node-icon {
+  color: var(--td-tree-text-color);
+}
+.tdesign-uniapp-tree-delete-icon {
+  color: var(--td-tree-delete-color);
+}
+.tdesign-uniapp-tree-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hover-c {
+  opacity: 0.6;
+}
+
+.fixed-bottom-bar {
+	position: fixed;
+	bottom: 0rpx;
+	left: 0rpx;
+	right: 0rpx;
+	z-index: 998;
+}
+
+/* ==================== 底部操作栏 ==================== */
+.tdesign-uniapp-tree-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--td-tree-bar-height);
+  padding: 0 32rpx;
+  background-color: var(--td-tree-bg-color);
+  border-top: 1rpx solid var(--td-tree-border-color);
+  font-size: var(--td-tree-bar-font-size);
+  box-sizing: border-box;
+}
+.tdesign-uniapp-tree-footer-info {
+  color: var(--td-tree-text-color);
+  font-size: var(--td-tree-bar-font-size);
+}
+.tdesign-uniapp-tree-footer-clear {
+  color: var(--td-tree-brand-color);
+  font-size: var(--td-tree-bar-font-size);
+}
+
+.edit-actions {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.drag-container-view {
+  width: 100%;
+  background-color: var(--td-tree-bg-color);
+  display: flex;
+	border: 1rpx solid var(--td-tree-input-border-color);
+	box-sizing: border-box;
+	height: var(--td-tree-item-height);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 20rpx;
+	font-size: var(--td-tree-font-size);
+	color: var(--td-tree-text-color);
+	line-height: var(--td-tree-item-height);
+	box-shadow: var(--td-tree-drag-shadow);
+	pointer-events: none;
+}

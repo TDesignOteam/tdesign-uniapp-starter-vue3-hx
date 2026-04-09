@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import ActionSheet, { ActionSheetTheme } from '../../../uni_modules/tdesign-uniapp/components/action-sheet/index';
+import { ActionSheetPlugin, ActionSheetTheme } from '../../../uni_modules/tdesign-uniapp/components/index';
 import TActionSheet from '../../../uni_modules/tdesign-uniapp/components/action-sheet/action-sheet.vue';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 
@@ -87,7 +87,7 @@ export default {
   created() {},
   methods: {
     handleAction() {
-      ActionSheet.show({
+      ActionSheetPlugin.show({
         theme: ActionSheetTheme.Grid,
         selector: '#t-action-sheet',
         context: this,
@@ -95,7 +95,7 @@ export default {
       });
     },
     handleMultiAction() {
-      ActionSheet.show({
+      ActionSheetPlugin.show({
         theme: ActionSheetTheme.Grid,
         selector: '#t-action-sheet',
         context: this,
@@ -106,7 +106,7 @@ export default {
       });
     },
     handleActionWithDesc() {
-      ActionSheet.show({
+      ActionSheetPlugin.show({
         theme: ActionSheetTheme.Grid,
         selector: '#t-action-sheet',
         context: this,

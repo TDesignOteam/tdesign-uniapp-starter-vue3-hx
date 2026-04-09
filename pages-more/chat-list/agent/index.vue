@@ -116,7 +116,7 @@ import TSteps from '../../../uni_modules/tdesign-uniapp/components/steps/steps.v
 import TStepItem from '../../../uni_modules/tdesign-uniapp/components/step-item/step-item.vue';
 import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
 import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
-import Toast from '../../../uni_modules/tdesign-uniapp/components/toast/index';
+import { Toast } from '../../../uni_modules/tdesign-uniapp/components/index';
 import { getNavigationBarHeight } from '../utils';
 
 let uniqueId = 0;

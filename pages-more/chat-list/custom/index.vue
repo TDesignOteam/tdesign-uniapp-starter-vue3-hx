@@ -85,7 +85,7 @@ import TChatList from '../../../uni_modules/tdesign-uniapp-chat/components/chat-
 import TChatSender from '../../../uni_modules/tdesign-uniapp-chat/components/chat-sender/chat-sender.vue';
 import TChatActionbar from '../../../uni_modules/tdesign-uniapp-chat/components/chat-actionbar/chat-actionbar.vue';
 import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
-import Toast from '../../../uni_modules/tdesign-uniapp/components/toast/index';
+import { Toast } from '../../../uni_modules/tdesign-uniapp/components/index';
 import { getNavigationBarHeight } from '../utils';
 import ChartComponent from '../chart-component';
 

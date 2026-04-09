@@ -1,0 +1,95 @@
+{
+  "name": "tdesign-uniapp-tree",
+  "id": "tdesign-uniapp-tree",
+  "displayName": "TDesign UniApp Tree 树形选择器",
+  "version": "0.0.3",
+  "author": "",
+  "title": "tdesign-uniapp-tree",
+  "description": "tdesign-uniapp-tree 树形选择器组件 - 基于 Vue3 + uni-app，支持多选/单选/搜索/懒加载",
+  "keywords": [
+    "tree",
+    "tree-select",
+    "vue3",
+    "miniprogram",
+    "tdesign"
+],
+  "homepage": "https://github.com/nicepkg/tdesign-uniapp-tree",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14",
+    "uni-app": "^3.7.3",
+    "uni-app-x": ""
+  },
+  "dcloudext": {
+    "type": "component-vue",
+    "sale": {
+      "regular": {
+        "price": "0.00"
+      },
+      "sourcecode": {
+        "price": "0.00"
+      }
+    },
+    "contact": {
+      "qq": ""
+    },
+    "declaration": {
+      "ads": "无",
+      "data": "插件不采集任何数据",
+      "permissions": "无"
+    },
+    "npmurl": "https://www.npmjs.com/package/tdesign-uniapp-tree",
+    "darkmode": "x",
+    "i18n": "x",
+    "widescreen": "x"
+  },
+  "uni_modules": {
+    "dependencies": [
+      "tdesign-uniapp"
+    ],
+    "encrypt": [],
+    "platforms": {
+      "cloud": {
+        "tcb": "√",
+        "aliyun": "√",
+        "alipay": "√"
+      },
+      "client": {
+        "uni-app": {
+          "vue": {
+            "vue2": "√",
+            "vue3": "√"
+          },
+          "web": {
+            "safari": "√",
+            "chrome": "√"
+          },
+          "app": {
+            "vue": "√",
+            "nvue": "-",
+            "android": "√",
+            "ios": "√",
+            "harmony": "-"
+          },
+          "mp": {
+            "weixin": "√",
+            "alipay": "√",
+            "toutiao": "√",
+            "baidu": "√",
+            "kuaishou": "-",
+            "jd": "-",
+            "harmony": "-",
+            "qq": "√",
+            "lark": "-",
+            "xhs": "-"
+          },
+          "quickapp": {
+            "huawei": "-",
+            "union": "-"
+          }
+        }
+      }
+    }
+},
+"repository": "https://github.com/novlan1/tdesign-uniapp-tree"
+}

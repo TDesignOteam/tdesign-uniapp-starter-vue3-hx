@@ -41,7 +41,8 @@
 <script>
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import TActionSheet from '../../../uni_modules/tdesign-uniapp/components/action-sheet/action-sheet.vue';
-import ActionSheet, { ActionSheetTheme } from '../../../uni_modules/tdesign-uniapp/components/action-sheet/index';
+import { ActionSheetPlugin, ActionSheetTheme } from '../../../uni_modules/tdesign-uniapp/components/index';
+
 export default {
   components: {
     TButton,
@@ -53,7 +54,7 @@ export default {
   created() {},
   methods: {
     handleAction() {
-      ActionSheet.show({
+      ActionSheetPlugin.show({
         theme: ActionSheetTheme.List,
         selector: '#t-action-sheet',
         context: this,
@@ -62,7 +63,7 @@ export default {
       });
     },
     showDescAction() {
-      ActionSheet.show({
+      ActionSheetPlugin.show({
         theme: ActionSheetTheme.List,
         selector: '#t-action-sheet',
         context: this,
@@ -72,7 +73,7 @@ export default {
       });
     },
     showIconAction() {
-      ActionSheet.show({
+      ActionSheetPlugin.show({
         theme: ActionSheetTheme.List,
         selector: '#t-action-sheet',
         context: this,

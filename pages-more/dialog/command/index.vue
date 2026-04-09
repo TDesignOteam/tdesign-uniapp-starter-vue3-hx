@@ -18,7 +18,8 @@
 <script>
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import TDialog from '../../../uni_modules/tdesign-uniapp/components/dialog/dialog.vue';
-import Dialog from '../../../uni_modules/tdesign-uniapp/components/dialog/index';
+import { DialogPlugin } from '../../../uni_modules/tdesign-uniapp/components/index';
+
 export default {
   components: {
     TButton,
@@ -38,7 +39,7 @@ export default {
         confirmBtn: '确定',
         cancelBtn: '取消',
       };
-      Dialog.confirm(dialogConfig)
+      DialogPlugin.confirm(dialogConfig)
         .then(data => console.log('点击了确定', data))
         .catch(data => console.log('点击了取消', data));
     },

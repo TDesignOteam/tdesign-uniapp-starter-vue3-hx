@@ -684,5 +684,13 @@
 				"pages-more/chat-loading"
 			]
 		}
+	},
+	"easycom": {
+		"custom": {
+			"^t-chat-(.*)": "@/uni_modules/tdesign-uniapp-chat/components/chat-$1/chat-$1.vue",
+			"^t-attachments": "@/uni_modules/tdesign-uniapp-chat/components/attachments/attachments.vue",
+			"^t-(.*)": "@/uni_modules/tdesign-uniapp/components/$1/$1.vue",
+			"^tdesign-uniapp-tree$": "@/uni_modules/tdesign-uniapp-tree/components/tdesign-uniapp-tree/tdesign-uniapp-tree.vue"
+		}
 	}
 }

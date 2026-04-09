@@ -6,8 +6,6 @@ export default defineConfig({
   plugins: [uni()],
   resolve: {
     alias: {
-      '@tdesign/uniapp': path.resolve(__dirname, './uni_modules/tdesign-uniapp/components'),
-      '@tdesign/uniapp-chat': path.resolve(__dirname, './uni_modules/tdesign-uniapp-chat/components'),
     },
   },
 });

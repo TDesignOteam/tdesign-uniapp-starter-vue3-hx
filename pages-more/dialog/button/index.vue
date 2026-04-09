@@ -19,7 +19,8 @@
 <script>
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import TDialog from '../../../uni_modules/tdesign-uniapp/components/dialog/dialog.vue';
-import Dialog from '../../../uni_modules/tdesign-uniapp/components/dialog/index';
+import { DialogPlugin } from '../../../uni_modules/tdesign-uniapp/components/index';
+
 export default {
   components: {
     TButton,
@@ -49,7 +50,7 @@ export default {
           },
         },
       };
-      Dialog.confirm(dialogConfig)
+      DialogPlugin.confirm(dialogConfig)
         .then(() => {
           console.log('点击确定');
         })

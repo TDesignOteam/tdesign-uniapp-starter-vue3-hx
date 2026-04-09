@@ -31,7 +31,8 @@
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
 import TImageViewer from '../../../uni_modules/tdesign-uniapp/components/image-viewer/image-viewer.vue';
-import Toast from '../../../uni_modules/tdesign-uniapp/components/toast/index';
+import { ToastPlugin } from '../../../uni_modules/tdesign-uniapp/components/index';
+
 export default {
   components: {
     TButton,
@@ -60,7 +61,7 @@ export default {
     },
     onDelete(e) {
       const { index } = e;
-      Toast({
+      ToastPlugin({
         context: this,
         selector: '#t-toast',
         message: `删除第${index + 1}个`,

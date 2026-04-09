@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import { default as ActionSheet, ActionSheetTheme } from '../../../uni_modules/tdesign-uniapp/components/action-sheet/index';
+import { ActionSheetPlugin, ActionSheetTheme } from '../../../uni_modules/tdesign-uniapp/components/index';
 import TActionSheet from '../../../uni_modules/tdesign-uniapp/components/action-sheet/action-sheet.vue';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 
@@ -45,7 +45,7 @@ export default {
   methods: {
     handleAction(e) {
       const align = e.currentTarget.dataset.custom;
-      ActionSheet.show({
+      ActionSheetPlugin.show({
         theme: ActionSheetTheme.List,
         selector: '#t-action-sheet',
         context: this,

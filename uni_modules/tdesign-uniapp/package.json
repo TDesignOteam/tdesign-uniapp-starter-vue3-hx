@@ -2,7 +2,7 @@
   "name": "tdesign-uniapp",
   "id": "tdesign-uniapp",
   "displayName": "TDesign UniApp",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "author": "novlan1",
   "title": "tdesign-uniapp",
   "description": "TDesign Component for uniapp",
@@ -11,7 +11,7 @@
     "miniprogram",
     "uniapp",
     "vue"
-  ],
+],
   "homepage": "https://tdesign.tencent.com/uniapp/",
   "bugs": {
     "url": "https://github.com/Tencent/tdesign-miniprogram/issues"
@@ -20,8 +20,8 @@
   "license": "MIT",
   "engines": {
     "node": ">=14",
-    "uni-app": "^3.6.17",
-    "uni-app-x": "^3.6.17"
+    "uni-app": "^3.7.3",
+    "uni-app-x": "^3.7.3"
   },
   "dcloudext": {
     "type": "component-vue",
@@ -81,7 +81,8 @@
             "jd": "√",
             "harmony": "-",
             "qq": "√",
-            "lark": "√"
+            "lark": "√",
+            "xhs": "-"
           },
           "quickapp": {
             "huawei": "-",
