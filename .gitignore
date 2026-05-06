@@ -3,10 +3,12 @@ node_modules/
 .DS_Store
 
 unpackage/dist/
-
+unpackage/cache/
+unpackage/release/
 
 # /components/
 # /mixins/
 # /pages/
 # /pages-more/
 # /style/
+
