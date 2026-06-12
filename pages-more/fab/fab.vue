@@ -104,12 +104,13 @@
 <script>
 
 import TButton from '../../uni_modules/tdesign-uniapp/components/button/button.vue';
-import TSkeleton from '../../uni_modules/tdesign-uniapp/components/skeleton/skeleton.vue';
-import BaseDemo from './base/index.vue';
-import AdvanceDemo from './advance/index.vue';
-import DraggableDemo from './draggable/index.vue';
-import CollapsibleDemo from './collapsible/index.vue';
 import { handlePageScroll } from '../../uni_modules/tdesign-uniapp/components/mixins/page-scroll';
+import TSkeleton from '../../uni_modules/tdesign-uniapp/components/skeleton/skeleton.vue';
+
+import AdvanceDemo from './advance/index.vue';
+import BaseDemo from './base/index.vue';
+import CollapsibleDemo from './collapsible/index.vue';
+import DraggableDemo from './draggable/index.vue';
 
 export default {
   components: {

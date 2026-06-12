@@ -58,13 +58,14 @@
 </template>
 
 <script>
-import tTabs from '../../uni_modules/tdesign-uniapp/components/tabs/tabs.vue';
 import tTabPanel from '../../uni_modules/tdesign-uniapp/components/tab-panel/tab-panel.vue';
-import BaseDemo from './base/index.vue';
-import HookComponent from './hook-component/index.vue';
-import DocsDemo from './docs/index.vue';
-import ImageDemo from './image/index.vue';
+import tTabs from '../../uni_modules/tdesign-uniapp/components/tabs/tabs.vue';
+
 import AgentDemo from './agent/index.vue';
+import BaseDemo from './base/index.vue';
+import DocsDemo from './docs/index.vue';
+import HookComponent from './hook-component/index.vue';
+import ImageDemo from './image/index.vue';
 
 export default {
   components: {

@@ -41,10 +41,10 @@
 </template>
 
 <script>
+import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
+import TCellGroup from '../../../uni_modules/tdesign-uniapp/components/cell-group/cell-group.vue';
 import TIndexes from '../../../uni_modules/tdesign-uniapp/components/indexes/indexes.vue';
 import TIndexesAnchor from '../../../uni_modules/tdesign-uniapp/components/indexes-anchor/indexes-anchor.vue';
-import TCellGroup from '../../../uni_modules/tdesign-uniapp/components/cell-group/cell-group.vue';
-import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
 import { handlePageScroll } from '../../../uni_modules/tdesign-uniapp/components/mixins/page-scroll';
 
 const children = new Array(5).fill('列表内容');

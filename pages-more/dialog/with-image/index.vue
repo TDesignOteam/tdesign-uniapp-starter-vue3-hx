@@ -179,8 +179,8 @@
 
 <script>
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
-import TImage from '../../../uni_modules/tdesign-uniapp/components/image/image.vue';
 import TDialog from '../../../uni_modules/tdesign-uniapp/components/dialog/dialog.vue';
+import TImage from '../../../uni_modules/tdesign-uniapp/components/image/image.vue';
 export default {
   options: {
     styleIsolation: 'shared',

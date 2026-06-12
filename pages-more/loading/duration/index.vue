@@ -23,8 +23,8 @@
 
 <script>
 import TLoading from '../../../uni_modules/tdesign-uniapp/components/loading/loading.vue';
-import TSlider from '../../../uni_modules/tdesign-uniapp/components/slider/slider.vue';
 import SkylineBehavior from '../../../uni_modules/tdesign-uniapp/components/mixins/skyline.js';
+import TSlider from '../../../uni_modules/tdesign-uniapp/components/slider/slider.vue';
 
 
 export default {

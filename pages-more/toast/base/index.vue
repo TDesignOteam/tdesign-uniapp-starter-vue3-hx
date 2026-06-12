@@ -55,10 +55,10 @@
 </template>
 
 <script>
-import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
+import { Toast } from '../../../uni_modules/tdesign-uniapp/components/index';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import SkylineBehavior from '../../../uni_modules/tdesign-uniapp/components/mixins/skyline.js';
-import { Toast } from '../../../uni_modules/tdesign-uniapp/components/index';
+import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
 
 export default {
   components: {

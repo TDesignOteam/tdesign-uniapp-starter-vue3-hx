@@ -60,10 +60,10 @@
 </template>
 
 <script>
-import TSteps from '../../../uni_modules/tdesign-uniapp/components/steps/steps.vue';
-import TStepItem from '../../../uni_modules/tdesign-uniapp/components/step-item/step-item.vue';
-import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import TStepItem from '../../../uni_modules/tdesign-uniapp/components/step-item/step-item.vue';
+import TSteps from '../../../uni_modules/tdesign-uniapp/components/steps/steps.vue';
 
 export default {
   components: {

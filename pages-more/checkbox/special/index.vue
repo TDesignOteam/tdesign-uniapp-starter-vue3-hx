@@ -66,11 +66,11 @@
   </view>
 </template>
 <script>
-import TCheckboxGroup from '../../../uni_modules/tdesign-uniapp/components/checkbox-group/checkbox-group.vue';
 import TCheckbox from '../../../uni_modules/tdesign-uniapp/components/checkbox/checkbox.vue';
-import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
-import { canUseVirtualHost } from '../../../uni_modules/tdesign-uniapp/components/common/version';
+import TCheckboxGroup from '../../../uni_modules/tdesign-uniapp/components/checkbox-group/checkbox-group.vue';
 import tools from '../../../uni_modules/tdesign-uniapp/components/common/utils.wxs';
+import { canUseVirtualHost } from '../../../uni_modules/tdesign-uniapp/components/common/version';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
 
 export default {
   options: {

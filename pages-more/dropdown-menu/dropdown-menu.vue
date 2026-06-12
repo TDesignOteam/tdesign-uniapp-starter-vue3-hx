@@ -49,10 +49,11 @@
 
 <script>
 
-import SingleDemo from './single/index.vue';
-import MultiDemo from './multi/index.vue';
-import TDropdownMenu from '../../uni_modules/tdesign-uniapp/components/dropdown-menu/dropdown-menu.vue';
 import TDropdownItem from '../../uni_modules/tdesign-uniapp/components/dropdown-item/dropdown-item.vue';
+import TDropdownMenu from '../../uni_modules/tdesign-uniapp/components/dropdown-menu/dropdown-menu.vue';
+
+import MultiDemo from './multi/index.vue';
+import SingleDemo from './single/index.vue';
 
 
 export default {

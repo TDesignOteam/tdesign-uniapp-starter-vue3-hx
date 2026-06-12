@@ -30,10 +30,10 @@
 </template>
 
 <script>
-import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
-import TActionSheet from '../../../uni_modules/tdesign-uniapp/components/action-sheet/action-sheet.vue';
-import TImageViewer from '../../../uni_modules/tdesign-uniapp/components/image-viewer/image-viewer.vue';
 import { ActionSheetPlugin } from '../../../uni_modules/tdesign-uniapp/components/index';
+import TActionSheet from '../../../uni_modules/tdesign-uniapp/components/action-sheet/action-sheet.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TImageViewer from '../../../uni_modules/tdesign-uniapp/components/image-viewer/image-viewer.vue';
 
 export default {
   components: {

@@ -82,9 +82,9 @@
 </template>
 
 <script>
+import { MessagePlugin } from '../../../uni_modules/tdesign-uniapp/components/index';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import TMessage from '../../../uni_modules/tdesign-uniapp/components/message/message.vue';
-import { MessagePlugin } from '../../../uni_modules/tdesign-uniapp/components/index';
 
 export default {
   options: {

@@ -76,10 +76,11 @@
 </template>
 
 <script>
-import TChatSender from '../../../uni_modules/tdesign-uniapp-chat/components/chat-sender/chat-sender.vue';
-import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
 import { Toast } from '../../../uni_modules/tdesign-uniapp/components/index';
 import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
+
+import TChatSender from '../../../uni_modules/tdesign-uniapp-chat/components/chat-sender/chat-sender.vue';
 
 export default {
   components: {

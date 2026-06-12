@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import TTable from '../../../uni_modules/tdesign-uniapp/components/table/table.vue';
 import SkylineBehavior from '../../../uni_modules/tdesign-uniapp/components/mixins/skyline.js';
+import TTable from '../../../uni_modules/tdesign-uniapp/components/table/table.vue';
 
 export default {
   components: {

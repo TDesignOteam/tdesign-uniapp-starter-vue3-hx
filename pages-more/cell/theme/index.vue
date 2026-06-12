@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import TCellGroup from '../../../uni_modules/tdesign-uniapp/components/cell-group/cell-group.vue';
 import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
+import TCellGroup from '../../../uni_modules/tdesign-uniapp/components/cell-group/cell-group.vue';
 export default {
   components: {
     TCellGroup,

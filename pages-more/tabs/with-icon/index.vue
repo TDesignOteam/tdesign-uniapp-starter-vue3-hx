@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import TTabs from '../../../uni_modules/tdesign-uniapp/components/tabs/tabs.vue';
 import TTabPanel from '../../../uni_modules/tdesign-uniapp/components/tab-panel/tab-panel.vue';
+import TTabs from '../../../uni_modules/tdesign-uniapp/components/tabs/tabs.vue';
 export default {
   components: {
     TTabs,

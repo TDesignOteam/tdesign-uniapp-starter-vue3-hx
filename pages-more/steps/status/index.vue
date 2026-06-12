@@ -50,8 +50,8 @@
 </template>
 
 <script>
-import TSteps from '../../../uni_modules/tdesign-uniapp/components/steps/steps.vue';
 import TStepItem from '../../../uni_modules/tdesign-uniapp/components/step-item/step-item.vue';
+import TSteps from '../../../uni_modules/tdesign-uniapp/components/steps/steps.vue';
 
 
 export default {

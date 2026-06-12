@@ -21,6 +21,7 @@
 
 <script>
 import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+
 import icons from '../data';
 
 export default {

@@ -211,18 +211,18 @@
 </template>
 
 <script>
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TCascader from '../../../uni_modules/tdesign-uniapp/components/cascader/cascader.vue';
+import { canUseVirtualHost } from '../../../uni_modules/tdesign-uniapp/components/common/version';
 import TForm from '../../../uni_modules/tdesign-uniapp/components/form/form.vue';
 import TFormItem from '../../../uni_modules/tdesign-uniapp/components/form-item/form-item.vue';
 import TInput from '../../../uni_modules/tdesign-uniapp/components/input/input.vue';
-import TRadioGroup from '../../../uni_modules/tdesign-uniapp/components/radio-group/radio-group.vue';
 import TRadio from '../../../uni_modules/tdesign-uniapp/components/radio/radio.vue';
-import TCascader from '../../../uni_modules/tdesign-uniapp/components/cascader/cascader.vue';
-import TStepper from '../../../uni_modules/tdesign-uniapp/components/stepper/stepper.vue';
+import TRadioGroup from '../../../uni_modules/tdesign-uniapp/components/radio-group/radio-group.vue';
 import TRate from '../../../uni_modules/tdesign-uniapp/components/rate/rate.vue';
+import TStepper from '../../../uni_modules/tdesign-uniapp/components/stepper/stepper.vue';
 import TTextarea from '../../../uni_modules/tdesign-uniapp/components/textarea/textarea.vue';
 import TUpload from '../../../uni_modules/tdesign-uniapp/components/upload/upload.vue';
-import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
-import { canUseVirtualHost } from '../../../uni_modules/tdesign-uniapp/components/common/version';
 
 
 export default {

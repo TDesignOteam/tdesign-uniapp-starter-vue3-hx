@@ -74,6 +74,7 @@
 <script>
 
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+
 import BaseDemo from '../base/index.vue';
 
 export default {

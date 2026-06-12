@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import TLoading from '../../../uni_modules/tdesign-uniapp/components/loading/loading.vue';
 import TImage from '../../../uni_modules/tdesign-uniapp/components/image/image.vue';
+import TLoading from '../../../uni_modules/tdesign-uniapp/components/loading/loading.vue';
 import SkylineBehavior from '../../../uni_modules/tdesign-uniapp/components/mixins/skyline.js';
 export default {
   options: {

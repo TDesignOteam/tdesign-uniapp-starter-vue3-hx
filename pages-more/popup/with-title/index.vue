@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import TPopup from '../../../uni_modules/tdesign-uniapp/components/popup/popup.vue';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TPopup from '../../../uni_modules/tdesign-uniapp/components/popup/popup.vue';
 export default {
   components: {
     TPopup,

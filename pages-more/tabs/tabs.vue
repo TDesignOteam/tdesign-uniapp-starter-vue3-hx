@@ -50,15 +50,16 @@
 
 <script>
 
+import { handlePageScroll } from '../../uni_modules/tdesign-uniapp/components/mixins/page-scroll';
+
 import BaseDemo from './base/index.vue';
 import ScrollDemo from './scroll/index.vue';
 import SizeDemo from './size/index.vue';
 import StatusDemo from './status/index.vue';
-import WithIcon from './with-icon/index.vue';
-import WithBadge from './with-badge/index.vue';
 import ThemeDemo from './theme/index.vue';
+import WithBadge from './with-badge/index.vue';
 import WithContent from './with-content/index.vue';
-import { handlePageScroll } from '../../uni_modules/tdesign-uniapp/components/mixins/page-scroll';
+import WithIcon from './with-icon/index.vue';
 
 
 export default {

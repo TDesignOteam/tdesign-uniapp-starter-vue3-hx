@@ -12,8 +12,6 @@
       :visible="areaVisible"
       :value="areaValue"
       title="选择地区"
-      cancel-btn="取消"
-      confirm-btn="确认"
       :using-custom-navbar="!isMPAlipay"
       @update:visible="(e) => areaVisible = e"
       @change="onPickerChange"
@@ -31,6 +29,7 @@
 import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
 import TPicker from '../../../uni_modules/tdesign-uniapp/components/picker/picker.vue';
 import TPickerItem from '../../../uni_modules/tdesign-uniapp/components/picker-item/picker-item.vue';
+
 import { areaList } from './helper';
 
 const getOptions = (obj, filter) => {

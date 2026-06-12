@@ -126,9 +126,9 @@
 
 <script>
 import TBadge from '../../../uni_modules/tdesign-uniapp/components/badge/badge.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
 import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
-import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import SkylineBehavior from '../../../uni_modules/tdesign-uniapp/components/mixins/skyline.js';
 
 export default {

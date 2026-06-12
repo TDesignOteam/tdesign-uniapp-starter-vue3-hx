@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
 import TCascader from '../../../uni_modules/tdesign-uniapp/components/cascader/cascader.vue';
+import TCell from '../../../uni_modules/tdesign-uniapp/components/cell/cell.vue';
 const data = {
   areaList: [
     {

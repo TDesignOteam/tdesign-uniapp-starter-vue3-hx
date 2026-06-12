@@ -61,10 +61,10 @@
 </template>
 
 <script>
-import TGuide from '../../../uni_modules/tdesign-uniapp/components/guide/guide.vue';
-import TInput from '../../../uni_modules/tdesign-uniapp/components/input/input.vue';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import { getRect } from '../../../uni_modules/tdesign-uniapp/components/common/utils';
+import TGuide from '../../../uni_modules/tdesign-uniapp/components/guide/guide.vue';
+import TInput from '../../../uni_modules/tdesign-uniapp/components/input/input.vue';
 
 export default {
   components: {

@@ -55,8 +55,8 @@
 </template>
 
 <script>
-import TChatMessage from '../../../uni_modules/tdesign-uniapp-chat/components/chat-message/chat-message.vue';
 import TChatActionbar from '../../../uni_modules/tdesign-uniapp-chat/components/chat-actionbar/chat-actionbar.vue';
+import TChatMessage from '../../../uni_modules/tdesign-uniapp-chat/components/chat-message/chat-message.vue';
 
 
 export default {

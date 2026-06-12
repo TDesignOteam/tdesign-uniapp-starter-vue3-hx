@@ -39,9 +39,9 @@
 </template>
 
 <script>
-import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
-import TActionSheet from '../../../uni_modules/tdesign-uniapp/components/action-sheet/action-sheet.vue';
 import { ActionSheetPlugin, ActionSheetTheme } from '../../../uni_modules/tdesign-uniapp/components/index';
+import TActionSheet from '../../../uni_modules/tdesign-uniapp/components/action-sheet/action-sheet.vue';
+import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 
 export default {
   components: {

@@ -15,8 +15,8 @@
 
 <script>
 import TConfigProvider from '../../../uni_modules/tdesign-uniapp/components/config-provider/config-provider.vue';
-import TUpload from '../../../uni_modules/tdesign-uniapp/components/upload/upload.vue';
 import enUS from '../../../uni_modules/tdesign-uniapp/components/locale/en_US';
+import TUpload from '../../../uni_modules/tdesign-uniapp/components/upload/upload.vue';
 
 export default {
   components: {

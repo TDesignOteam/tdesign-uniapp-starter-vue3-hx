@@ -369,8 +369,8 @@
 </template>
 
 <script>
-import TPopover from '../../../uni_modules/tdesign-uniapp/components/popover/popover.vue';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TPopover from '../../../uni_modules/tdesign-uniapp/components/popover/popover.vue';
 export default {
   options: {
     styleIsolation: 'shared',

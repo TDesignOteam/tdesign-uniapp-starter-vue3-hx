@@ -14,12 +14,28 @@
             :avatar="item.avatar || ''"
             :name="item.name || ''"
             :datetime="item.datetime || ''"
-            :content="item.message.content"
             :role="item.message.role"
-            :chat-content-props="chatContentProps"
             :placement="item.message.role === 'user' ? 'right' : 'left'"
             @message-longpress="showPopover"
           >
+            <template #content>
+              <block
+                v-for="(contentItem, contentIndex) in item.message.content"
+                :key="contentIndex"
+              >
+                <t-chat-content
+                  v-if="contentItem.type === 'text' || contentItem.type === 'markdown'"
+                  :content="contentItem"
+                  :role="item.message.role"
+                  :markdown-props="{
+                    ...chatContentProps,
+                    streaming: loading && chatIndex === 0 && item.message.role === 'assistant'
+                      ? { hasNextChunk: true, tail: true }
+                      : null,
+                  }"
+                />
+              </block>
+            </template>
             <template #actionbar>
               <t-chat-actionbar
                 v-if="
@@ -68,12 +84,14 @@
 </template>
 
 <script>
-import TChatMessage from '../../../uni_modules/tdesign-uniapp-chat/components/chat-message/chat-message.vue';
-import TChatList from '../../../uni_modules/tdesign-uniapp-chat/components/chat-list/chat-list.vue';
-import TChatSender from '../../../uni_modules/tdesign-uniapp-chat/components/chat-sender/chat-sender.vue';
-import TChatActionbar from '../../../uni_modules/tdesign-uniapp-chat/components/chat-actionbar/chat-actionbar.vue';
-import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
 import { Toast } from '../../../uni_modules/tdesign-uniapp/components/index';
+import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
+import TChatActionbar from '../../../uni_modules/tdesign-uniapp-chat/components/chat-actionbar/chat-actionbar.vue';
+import TChatContent from '../../../uni_modules/tdesign-uniapp-chat/components/chat-content/chat-content.vue';
+import TChatList from '../../../uni_modules/tdesign-uniapp-chat/components/chat-list/chat-list.vue';
+import TChatMessage from '../../../uni_modules/tdesign-uniapp-chat/components/chat-message/chat-message.vue';
+import TChatSender from '../../../uni_modules/tdesign-uniapp-chat/components/chat-sender/chat-sender.vue';
+
 import { getNavigationBarHeight } from '../utils';
 
 let uniqueId = 0;
@@ -97,6 +115,7 @@ const fetchStream = async (str, options) => {
 export default {
   components: {
     TChatMessage,
+    TChatContent,
     TChatList,
     TChatSender,
     TChatActionbar,

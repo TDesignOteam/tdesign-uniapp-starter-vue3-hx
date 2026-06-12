@@ -142,11 +142,12 @@
 
 import TButton from '../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import TPopup from '../../uni_modules/tdesign-uniapp/components/popup/popup.vue';
+
 import BaseDemo from './base/index.vue';
-import NoMask from './no-mask/index.vue';
+import ContentDemo from './content/index.vue';
 import DialogDemo from './dialog/index.vue';
 import MultipleDemo from './multiple/index.vue';
-import ContentDemo from './content/index.vue';
+import NoMask from './no-mask/index.vue';
 
 export default {
   components: {

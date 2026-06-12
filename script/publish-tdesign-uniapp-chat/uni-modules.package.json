@@ -2,7 +2,7 @@
   "name": "tdesign-uniapp-chat",
   "id": "tdesign-uniapp-chat",
   "displayName": "TDesign UniApp Chat",
-  "version": "0.2.1",
+  "version": "0.2.5",
   "author": "novlan1",
   "title": "tdesign-uniapp-chat",
   "description": "TDesign Chat Component for uniapp",
@@ -20,8 +20,8 @@
   "license": "MIT",
   "engines": {
     "node": ">=14",
-    "uni-app": "^3.6.17",
-    "uni-app-x": "^3.6.17"
+    "uni-app": "^3.99",
+    "uni-app-x": "^3.99"
   },
   "dcloudext": {
     "type": "component-vue",
@@ -70,7 +70,7 @@
             "nvue": "-",
             "android": "√",
             "ios": "√",
-            "harmony": "-"
+            "harmony": "√"
           },
           "mp": {
             "weixin": "√",
@@ -81,7 +81,8 @@
             "jd": "√",
             "harmony": "-",
             "qq": "√",
-            "lark": "√"
+            "lark": "√",
+            "xhs": "√"
           },
           "quickapp": {
             "huawei": "-",

@@ -25,9 +25,9 @@
 </template>
 
 <script>
-import TRadioGroup from '../../../uni_modules/tdesign-uniapp/components/radio-group/radio-group.vue';
-import TRadio from '../../../uni_modules/tdesign-uniapp/components/radio/radio.vue';
 import tools from '../../../uni_modules/tdesign-uniapp/components/common/utils.wxs';
+import TRadio from '../../../uni_modules/tdesign-uniapp/components/radio/radio.vue';
+import TRadioGroup from '../../../uni_modules/tdesign-uniapp/components/radio-group/radio-group.vue';
 
 
 export default {

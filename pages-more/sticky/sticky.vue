@@ -34,10 +34,11 @@
 
 <script>
 
-import BaseDemo from './base/index.vue';
-import OffsetDemo from './offset/index.vue';
-import ContainerDemo from './container/index.vue';
 import { handlePageScroll } from '../../uni_modules/tdesign-uniapp/components/mixins/page-scroll';
+
+import BaseDemo from './base/index.vue';
+import ContainerDemo from './container/index.vue';
+import OffsetDemo from './offset/index.vue';
 
 
 export default {

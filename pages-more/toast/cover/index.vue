@@ -19,9 +19,9 @@
 </template>
 
 <script>
-import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
 import { Toast } from '../../../uni_modules/tdesign-uniapp/components/index';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
+import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
 
 
 export default {

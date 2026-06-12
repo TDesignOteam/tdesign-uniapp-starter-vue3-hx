@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import TNavbar from '../../../uni_modules/tdesign-uniapp/components/navbar/navbar.vue';
-import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
 import { canUseVirtualHost } from '../../../uni_modules/tdesign-uniapp/components/common/version';
+import TIcon from '../../../uni_modules/tdesign-uniapp/components/icon/icon.vue';
+import TNavbar from '../../../uni_modules/tdesign-uniapp/components/navbar/navbar.vue';
 
 
 export default {
