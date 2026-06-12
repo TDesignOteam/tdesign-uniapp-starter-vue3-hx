@@ -279,9 +279,11 @@
 </template>
 
 <script>
-import chatMarkdownCode from '../chat-markdown-code/chat-markdown-code.vue';
 import { prefix } from '../../../tdesign-uniapp/components/common/config';
 import { uniComponent } from '../../../tdesign-uniapp/components/common/src/index';
+
+import chatMarkdownCode from '../chat-markdown-code/chat-markdown-code.vue';
+
 // #ifdef MP
 import { TChatMarkdownNode } from './chat-markdown-node.vue';
 // #endif

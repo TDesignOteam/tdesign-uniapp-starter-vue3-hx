@@ -24,11 +24,15 @@
   </view>
 </template>
 <script>
-import TChatMarkdown from '../chat-markdown/chat-markdown.vue';
 import { prefix } from '../../../tdesign-uniapp/components/common/config';
-import props from './props';
-import tools from '../../../tdesign-uniapp/components/common/utils.wxs';
+
 import { uniComponent } from '../../../tdesign-uniapp/components/common/src/index';
+import tools from '../../../tdesign-uniapp/components/common/utils.wxs';
+
+import TChatMarkdown from '../chat-markdown/chat-markdown.vue';
+
+import props from './props';
+
 
 const name = `${prefix}-chat-content`;
 

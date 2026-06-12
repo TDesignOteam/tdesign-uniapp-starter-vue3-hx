@@ -120,7 +120,21 @@
         :class="classPrefix + '__loading--full'"
       >
         <slot name="loading">
-          <t-loading v-bind="loadingProps" />
+          <t-loading
+            :delay="(loadingProps && loadingProps.delay) || 0"
+            :duration="(loadingProps && loadingProps.duration) || 800"
+            :fullscreen="!!(loadingProps && loadingProps.fullscreen)"
+            :indicator="loadingProps && loadingProps.indicator !== undefined ? loadingProps.indicator : true"
+            :inherit-color="!!(loadingProps && loadingProps.inheritColor)"
+            :layout="(loadingProps && loadingProps.layout) || 'horizontal'"
+            :loading="loadingProps && loadingProps.loading !== undefined ? loadingProps.loading : true"
+            :pause="!!(loadingProps && loadingProps.pause)"
+            :progress="loadingProps && loadingProps.progress"
+            :reverse="!!(loadingProps && loadingProps.reverse)"
+            :size="(loadingProps && loadingProps.size) || '20px'"
+            :text="(loadingProps && loadingProps.text) || ''"
+            :theme="(loadingProps && loadingProps.theme) || 'circular'"
+          />
         </slot>
       </view>
     </scroll-view>
@@ -281,12 +295,27 @@ export default {
         return styles.join('; ');
       },
 
+      getCustomClassName(className = '') {
+        const calcClassName = (name) => {
+          if (typeof name === 'function') {
+            return name() || '';
+          }
+          return name;
+        };
+
+        if (Array.isArray(className)) {
+          return className.map(calcClassName);
+        }
+        return [calcClassName(className)];
+      },
+
       getThClassName(col, colIndex) {
         const classes = [];
         if (col.colKey) classes.push(`${name}__th-${col.colKey}`);
         if (col.align && col.align !== 'left') classes.push(`${prefix}-align-${col.align}`);
         if (col.fixed === 'left') classes.push(`${name}__cell--fixed-left`);
         if (col.fixed === 'right') classes.push(`${name}__cell--fixed-right`);
+        if (col.className) classes.push(...this.getCustomClassName(col.className));
         if (colIndex === this.lastFixedLeftIndex) classes.push(`${name}__cell--fixed-left-last`);
         if (colIndex === this.firstFixedRightIndex) classes.push(`${name}__cell--fixed-right-first`);
         return classes.join(' ');

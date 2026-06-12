@@ -98,10 +98,17 @@
   transform: scaleX(0.25);
   transform-origin: left center;
 }
+.t-chat-markdown .t-chat-markdown-table {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
 .t-chat-markdown .t-chat-markdown-table__container {
   display: table;
-  width: 100%;
+  min-width: 100%;
+  max-width: max-content;
   border-collapse: collapse;
+  white-space: nowrap;
 }
 .t-chat-markdown .t-chat-markdown-table__container-thead {
   display: table-header-group;

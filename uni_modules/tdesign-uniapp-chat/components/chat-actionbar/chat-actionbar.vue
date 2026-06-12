@@ -114,14 +114,16 @@
   </view>
 </template>
 <script>
-import tIcon from '../../../tdesign-uniapp/components/icon/icon.vue';
-import tPopover from '../../../tdesign-uniapp/components/popover/popover.vue';
 import { prefix } from '../../../tdesign-uniapp/components/common/config';
-import props from './props';
+
 import { uniComponent } from '../../../tdesign-uniapp/components/common/src/index';
 import tools from '../../../tdesign-uniapp/components/common/utils.wxs';
+import tIcon from '../../../tdesign-uniapp/components/icon/icon.vue';
+import tPopover from '../../../tdesign-uniapp/components/popover/popover.vue';
 
 import usingConfig from '../mixins/using-config';
+
+import props from './props';
 const componentName = 'chat-actionbar';
 const name = `${prefix}-${componentName}`;
 

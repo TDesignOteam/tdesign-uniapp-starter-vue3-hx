@@ -50,13 +50,14 @@
   </view>
 </template>
 <script>
-import tSkeleton from '../../../tdesign-uniapp/components/skeleton/skeleton.vue';
-import tLoading from '../../../tdesign-uniapp/components/loading/loading.vue';
 import { prefix } from '../../../tdesign-uniapp/components/common/config';
 import { uniComponent } from '../../../tdesign-uniapp/components/common/src/index';
 
-import props from './props';
 import tools from '../../../tdesign-uniapp/components/common/utils.wxs';
+import tLoading from '../../../tdesign-uniapp/components/loading/loading.vue';
+import tSkeleton from '../../../tdesign-uniapp/components/skeleton/skeleton.vue';
+
+import props from './props';
 
 
 const name = `${prefix}-chat-loading`;
