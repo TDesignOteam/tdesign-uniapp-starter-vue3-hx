@@ -14,10 +14,12 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "t-comm": "^3.1.15"
+    "@babel/runtime": "^8.0.0",
+    "t-comm": "^3.3.0"
   },
   "devDependencies": {
-    "eslint-config-light": "^1.5.3",
-    "chokidar": "^3.6.0"
+    "@plugin-light/vite-plugin-gen-version": "1.0.2-beta.0",
+    "chokidar": "^3.6.0",
+    "eslint-config-light": "^1.5.3"
   }
 }
