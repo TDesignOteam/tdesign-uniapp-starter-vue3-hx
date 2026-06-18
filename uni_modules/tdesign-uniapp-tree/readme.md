@@ -202,7 +202,7 @@ function loadData(data) {
 
 > `valueMode` 可选值：`'onlyLeaf'`（仅叶子节点）、`'parentFirst'`（父节点优先）、`'all'`（所有节点）
 
-#### UniApp 扩展
+#### Uniapp 扩展
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |

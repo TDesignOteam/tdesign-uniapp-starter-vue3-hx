@@ -1,7 +1,7 @@
 {
   "name": "tdesign-uniapp-tree",
   "id": "tdesign-uniapp-tree",
-  "displayName": "TDesign UniApp Tree 树形选择器",
+  "displayName": "TDesign Uniapp Tree 树形选择器",
   "version": "0.0.3",
   "author": "",
   "title": "tdesign-uniapp-tree",
@@ -12,7 +12,7 @@
     "vue3",
     "miniprogram",
     "tdesign"
-],
+  ],
   "homepage": "https://github.com/nicepkg/tdesign-uniapp-tree",
   "license": "MIT",
   "engines": {
@@ -90,6 +90,6 @@
         }
       }
     }
-},
-"repository": "https://github.com/novlan1/tdesign-uniapp-tree"
+  },
+  "repository": "https://github.com/novlan1/tdesign-uniapp-tree"
 }
