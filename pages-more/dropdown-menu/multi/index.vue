@@ -33,14 +33,12 @@
 import TDropdownItem from '../../../uni_modules/tdesign-uniapp/components/dropdown-item/dropdown-item.vue';
 import TDropdownMenu from '../../../uni_modules/tdesign-uniapp/components/dropdown-menu/dropdown-menu.vue';
 
-
 const chineseNumber = '一二三四五六七八九十'.split('');
-const singleSelectOptions = new Array(8).fill(null)
-  .map((_, i) => ({
-    label: `选项${chineseNumber[i]}`,
-    value: `option_${i + 1}`,
-    disabled: false,
-  }));
+const singleSelectOptions = new Array(8).fill(null).map((_, i) => ({
+  label: `选项${chineseNumber[i]}`,
+  value: `option_${i + 1}`,
+  disabled: false,
+}));
 singleSelectOptions.push({
   label: '禁用选项',
   value: 'disabled',
@@ -91,5 +89,4 @@ export default {
   },
 };
 </script>
-<style>
-</style>
+<style></style>

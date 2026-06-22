@@ -1,19 +1,9 @@
 <template>
   <view>
-    <t-toast
-      ref="t-toast"
-    />
+    <t-toast ref="t-toast" />
 
     <view class="box">
-      <t-button
-        theme="primary"
-        size="large"
-        variant="outline"
-        block
-        @click="handleToast"
-      >
-        禁止滑动和点击
-      </t-button>
+      <t-button theme="primary" size="large" variant="outline" block @click="handleToast"> 禁止滑动和点击 </t-button>
     </view>
   </view>
 </template>
@@ -22,7 +12,6 @@
 import { Toast } from '../../../uni_modules/tdesign-uniapp/components/index';
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import TToast from '../../../uni_modules/tdesign-uniapp/components/toast/toast.vue';
-
 
 export default {
   components: {
@@ -48,5 +37,4 @@ export default {
   },
 };
 </script>
-<style>
-</style>
+<style></style>

@@ -1,26 +1,14 @@
 <template>
   <view>
-    <t-button
-      size="large"
-      variant="outline"
-      block
-      theme="primary"
-      @click="onTriggerClick"
-    >
-      Toggle
-    </t-button>
+    <t-button size="large" variant="outline" block theme="primary" @click="onTriggerClick"> Toggle </t-button>
 
-    <t-transition
-      name="translate"
-      :visible="visible"
-    >
+    <t-transition name="translate" :visible="visible">
       <view class="block" />
     </t-transition>
   </view>
 </template>
 
 <script>
-
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import TTransition from '../../../uni_modules/tdesign-uniapp/components/transition/transition.vue';
 export default {

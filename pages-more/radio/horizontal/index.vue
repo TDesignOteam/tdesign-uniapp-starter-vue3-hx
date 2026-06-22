@@ -1,25 +1,9 @@
 <template>
   <view>
-    <t-radio-group
-      default-value="0"
-      borderless
-      :custom-style="boxCustomStyle"
-    >
-      <t-radio
-        :block="false"
-        label="单选标题"
-        value="0"
-      />
-      <t-radio
-        :block="false"
-        label="单选标题"
-        value="1"
-      />
-      <t-radio
-        :block="false"
-        label="上限四字"
-        value="2"
-      />
+    <t-radio-group default-value="0" borderless :custom-style="boxCustomStyle">
+      <t-radio :block="false" label="单选标题" value="0" />
+      <t-radio :block="false" label="单选标题" value="1" />
+      <t-radio :block="false" label="上限四字" value="2" />
     </t-radio-group>
   </view>
 </template>
@@ -28,7 +12,6 @@
 import tools from '../../../uni_modules/tdesign-uniapp/components/common/utils.wxs';
 import TRadio from '../../../uni_modules/tdesign-uniapp/components/radio/radio.vue';
 import TRadioGroup from '../../../uni_modules/tdesign-uniapp/components/radio-group/radio-group.vue';
-
 
 export default {
   options: {
@@ -64,10 +47,10 @@ export default {
 </script>
 <style>
 .box {
-    padding: 32rpx;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: var(--td-bg-color-container, #fff);
+  padding: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--td-bg-color-container, #fff);
 }
 </style>

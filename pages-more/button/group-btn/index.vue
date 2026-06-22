@@ -27,7 +27,6 @@
 import TButton from '../../../uni_modules/tdesign-uniapp/components/button/button.vue';
 import { canUseVirtualHost } from '../../../uni_modules/tdesign-uniapp/components/common/version';
 
-
 export default {
   components: {
     TButton,
@@ -49,7 +48,7 @@ export default {
 </script>
 <style scoped>
 .button-example {
-    margin: 32rpx;
-    display: flex;
+  margin: 32rpx;
+  display: flex;
 }
 </style>

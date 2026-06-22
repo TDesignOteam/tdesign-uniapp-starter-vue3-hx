@@ -22,7 +22,6 @@
 import TDropdownItem from '../../../uni_modules/tdesign-uniapp/components/dropdown-item/dropdown-item.vue';
 import TDropdownMenu from '../../../uni_modules/tdesign-uniapp/components/dropdown-menu/dropdown-menu.vue';
 
-
 export default {
   components: {
     TDropdownMenu,
@@ -76,5 +75,4 @@ export default {
   },
 };
 </script>
-<style>
-</style>
+<style></style>
