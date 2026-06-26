@@ -1,5 +1,5 @@
 {
-    "name" : "tdesign-uniapp-starter-vue3-hx",
+    "name" : "TDesign Uniapp",
     "appid" : "__UNI__E000021",
     "description" : "",
     "versionName" : "1.0.0",
@@ -97,5 +97,22 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "3"
+    "vueVersion" : "3",
+    "app-harmony" : {
+        "distribute" : {
+            "bundleName" : "ygw.tdesign.uniapp",
+            "signingConfigs" : {
+                "release" : {
+                    "certpath" : "/Users/guowangyang/Downloads/tdesign_uniapp.cer",
+                    "keyAlias" : "ygw_1",
+                    "keyPassword" : "0000001AFAEA5BA3FEB3633BD9E75007071CCFD50C0671963CF6058E80D7C6712B30B29034EDBC28E1EB",
+                    "profile" : "/Users/guowangyang/Downloads/tdesign_uniappRelease.p7b",
+                    "signAlg" : "SHA256withECDSA",
+                    "storeFile" : "/Users/guowangyang/Downloads/ygw_1.p12",
+                    "storePassword" : "0000001A7197B1D5CE1BD8CF310BA46CCE4EDF6F45FD17E262D8C97B34466B6772D51B612879C5F0433F"
+                }
+            },
+            "deviceTypes" : [ "phone", "tablet" ]
+        }
+    }
 }
