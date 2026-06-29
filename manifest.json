@@ -164,7 +164,15 @@
                     "storePassword" : "0000001A7197B1D5CE1BD8CF310BA46CCE4EDF6F45FD17E262D8C97B34466B6772D51B612879C5F0433F"
                 }
             },
-            "deviceTypes" : [ "phone", "tablet" ]
+            "deviceTypes" : [ "phone", "tablet" ],
+            "icons" : {
+                "foreground" : "/Users/guowangyang/Documents/github/my-cos/cdn.uwayfly.com/tdesign-uniapp/harmony/icons/foreground.png",
+                "background" : "/Users/guowangyang/Documents/github/my-cos/cdn.uwayfly.com/tdesign-uniapp/harmony/icons/background.png"
+            },
+            "splashScreens" : {
+                "startWindowIcon" : "/Users/guowangyang/Documents/github/my-cos/cdn.uwayfly.com/tdesign-uniapp/原始设计图/tdesign-logo-216*216.png",
+                "startWindowBackground" : "#ffffff"
+            }
         }
     }
 }
