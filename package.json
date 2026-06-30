@@ -8,7 +8,8 @@
     "init:td": "node script/publish-tdesign-uniapp/index.js",
     "init:chat": "node script/publish-tdesign-uniapp-chat/index.js",
     "init:alias": "node script/replace-alias/index.js",
-    "watch": "node script/replace-alias/watch.js"
+    "watch": "node script/replace-alias/watch.js",
+    "offline": "node script/offline.js"
   },
   "author": "novlan1",
   "license": "MIT",
