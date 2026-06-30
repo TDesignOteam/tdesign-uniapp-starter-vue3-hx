@@ -21,26 +21,26 @@ export default {
     return {
       originFiles: [
         {
-          url: 'https://tdesign.gtimg.com/mobile/demos/example4.png',
+          url: '/static/offline/mobile/demos/example4.png',
           name: 'uploaded1.png',
           type: 'image',
           status: 'loading',
         },
         {
-          url: 'https://tdesign.gtimg.com/mobile/demos/example5.png',
+          url: '/static/offline/mobile/demos/example5.png',
           name: 'uploaded2.png',
           type: 'image',
           percent: 68,
           status: 'loading',
         },
         {
-          url: 'https://tdesign.gtimg.com/mobile/demos/example6.png',
+          url: '/static/offline/mobile/demos/example6.png',
           name: 'uploaded3.png',
           type: 'image',
           status: 'reload',
         },
         {
-          url: 'https://tdesign.gtimg.com/mobile/demos/example5.png',
+          url: '/static/offline/mobile/demos/example5.png',
           name: 'uploaded4.png',
           type: 'image',
           status: 'failed',

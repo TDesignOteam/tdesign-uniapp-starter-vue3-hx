@@ -10,8 +10,8 @@
         :logo="{
           url:
             theme === 'dark'
-              ? 'https://tdesign.gtimg.com/mobile/demos/footer-logo-dark.png'
-              : 'https://tdesign.gtimg.com/mobile/demos/logo1.png',
+              ? '/static/offline/mobile/demos/footer-logo-dark.png'
+              : '/static/offline/mobile/demos/logo1.png',
         }"
       />
     </view>
@@ -23,7 +23,7 @@ import TFooter from '../../../uni_modules/tdesign-uniapp/components/footer/foote
 import { themeMixin } from '../../../uni_modules/tdesign-uniapp/components/mixins/theme-change';
 
 const logo = {
-  icon: 'https://tdesign.gtimg.com/mobile/demos/logo2.png',
+  icon: '/static/offline/mobile/demos/logo2.png',
   title: '品牌名称',
 };
 

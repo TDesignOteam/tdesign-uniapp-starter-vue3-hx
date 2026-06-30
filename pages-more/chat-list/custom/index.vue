@@ -122,7 +122,7 @@ export default {
 
       chatList: [
         {
-          avatar: 'https://tdesign.gtimg.com/site/chat-avatar.png',
+          avatar: '/static/offline/site/chat-avatar.png',
           key: getUniqueKey(),
           message: {
             role: 'assistant',
@@ -248,7 +248,7 @@ export default {
     simulateAssistantReply() {
       this.loading = true;
       const assistantMessage = {
-        avatar: 'https://tdesign.gtimg.com/site/chat-avatar.png',
+        avatar: '/static/offline/site/chat-avatar.png',
         key: getUniqueKey(),
         message: {
           role: 'assistant',

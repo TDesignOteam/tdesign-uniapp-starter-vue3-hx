@@ -17,12 +17,12 @@ export default {
   data() {
     return {
       pics: [
-        'https://tdesign.gtimg.com/mobile/demos/avatar1.png',
-        'https://tdesign.gtimg.com/mobile/demos/avatar2.png',
-        'https://tdesign.gtimg.com/mobile/demos/avatar3.png',
-        'https://tdesign.gtimg.com/mobile/demos/avatar4.png',
-        'https://tdesign.gtimg.com/mobile/demos/avatar5.png',
-        'https://tdesign.gtimg.com/mobile/demos/avatar1.png',
+        '/static/offline/mobile/demos/avatar1.png',
+        '/static/offline/mobile/demos/avatar2.png',
+        '/static/offline/mobile/demos/avatar3.png',
+        '/static/offline/mobile/demos/avatar4.png',
+        '/static/offline/mobile/demos/avatar5.png',
+        '/static/offline/mobile/demos/avatar1.png',
       ],
       pic: '',
     };

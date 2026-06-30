@@ -23,7 +23,7 @@
           <p>用户引导的说明文案 1</p>
           <t-image
             t-class="guide-demo-image"
-            src="https://tdesign.gtimg.com/demo/demo-image-1.png"
+            src="/static/offline/demo/demo-image-1.png"
             mode="scaleToFill"
             width="100%;height:380rpx"
           />

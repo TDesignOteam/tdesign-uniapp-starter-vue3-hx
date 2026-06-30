@@ -32,7 +32,7 @@
       title="单行标题"
       description="一段很长很长的内容文字"
       align="top"
-      image="https://tdesign.gtimg.com/mobile/demos/avatar1.png"
+      image="/static/offline/mobile/demos/avatar1.png"
       hover
       :bordered="false"
     />

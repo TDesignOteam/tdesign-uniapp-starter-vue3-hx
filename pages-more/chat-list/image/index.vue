@@ -133,7 +133,7 @@ export default {
 
       chatList: [
         {
-          avatar: 'https://tdesign.gtimg.com/site/chat-avatar.png',
+          avatar: '/static/offline/site/chat-avatar.png',
           key: getUniqueKey(),
           message: {
             role: 'assistant',
@@ -285,7 +285,7 @@ export default {
     simulateAssistantReply() {
       this.loading = true;
       const assistantMessage = {
-        avatar: 'https://tdesign.gtimg.com/site/chat-avatar.png',
+        avatar: '/static/offline/site/chat-avatar.png',
         key: getUniqueKey(),
         message: {
           role: 'assistant',
@@ -318,7 +318,7 @@ export default {
           data: [
             {
               name: 'sample1.png',
-              url: 'https://tdesign.gtimg.com/site/square.png',
+              url: '/static/offline/site/square.png',
               fileType: 'image',
               status: 'success',
               size: 1032,
@@ -327,7 +327,7 @@ export default {
             },
             {
               name: 'sample2.png',
-              url: 'https://tdesign.gtimg.com/site/square.png',
+              url: '/static/offline/site/square.png',
               fileType: 'image',
               status: 'success',
               size: 1032,
@@ -336,7 +336,7 @@ export default {
             },
             {
               name: 'sample3.png',
-              url: 'https://tdesign.gtimg.com/site/square.png',
+              url: '/static/offline/site/square.png',
               fileType: 'image',
               status: 'success',
               size: 1032,
@@ -345,7 +345,7 @@ export default {
             },
             {
               name: 'sample4.png',
-              url: 'https://tdesign.gtimg.com/site/square.png',
+              url: '/static/offline/site/square.png',
               fileType: 'image',
               status: 'success',
               size: 1032,
@@ -354,7 +354,7 @@ export default {
             },
             {
               name: 'sample5.png',
-              url: 'https://tdesign.gtimg.com/site/square.png',
+              url: '/static/offline/site/square.png',
               fileType: 'image',
               status: 'success',
               size: 1032,

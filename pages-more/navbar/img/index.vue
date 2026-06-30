@@ -7,8 +7,8 @@
             t-class="custom-image"
             :src="
               theme === 'dark'
-                ? 'https://tdesign.gtimg.com/mobile/demos/image-dark.png'
-                : 'https://tdesign.gtimg.com/mobile/demos/logo-light.png'
+                ? '/static/offline/mobile/demos/image-dark.png'
+                : '/static/offline/mobile/demos/logo-light.png'
             "
             aria-label="导航栏图片"
             custom-style="width: 87px;height: 24px;"

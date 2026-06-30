@@ -2,7 +2,7 @@
   <view class="chat-example">
     <view class="chat-example-block">
       <t-chat-message
-        avatar="https://tdesign.gtimg.com/site/chat-avatar.png"
+        avatar="/static/offline/site/chat-avatar.png"
         :content="message.content"
         :role="message.role"
         animation="gradient"
@@ -11,7 +11,7 @@
     </view>
     <view class="chat-example-block">
       <t-chat-message
-        avatar="https://tdesign.gtimg.com/site/chat-avatar.png"
+        avatar="/static/offline/site/chat-avatar.png"
         :content="message.content"
         :role="message.role"
         animation="skeleton"

@@ -37,7 +37,7 @@
 
 <script>
 import TSwiper from '../../../uni_modules/tdesign-uniapp/components/swiper/swiper.vue';
-const imageCdn = 'https://tdesign.gtimg.com/mobile/demos';
+const imageCdn = '/static/offline/mobile/demos';
 const swiperList = [
   `${imageCdn}/swiper1.png`,
   `${imageCdn}/swiper2.png`,

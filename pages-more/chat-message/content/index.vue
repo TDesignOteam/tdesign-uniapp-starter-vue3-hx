@@ -76,7 +76,7 @@ export default {
                 fileType: 'image',
                 name: 'avatar.jpg',
                 size: 234234,
-                url: 'https://tdesign.gtimg.com/demo/demo-image-1.png',
+                url: '/static/offline/demo/demo-image-1.png',
                 width: 1920,
                 // 图片实际宽度
                 height: 1080, // 图片实际高度
@@ -100,7 +100,7 @@ export default {
                 fileType: 'image',
                 name: 'avatar.jpg',
                 size: 234234,
-                url: 'https://tdesign.gtimg.com/demo/demo-image-1.png',
+                url: '/static/offline/demo/demo-image-1.png',
                 width: 1920,
                 // 图片实际宽度
                 height: 1080, // 图片实际高度
@@ -124,7 +124,7 @@ export default {
                 fileType: 'image',
                 name: 'avatar.jpg',
                 size: 234234,
-                url: 'https://tdesign.gtimg.com/demo/demo-image-1.png',
+                url: '/static/offline/demo/demo-image-1.png',
                 width: 1920,
                 // 为了更好的适配不同尺寸图片建议传入宽高，不传也有兜底尺寸
                 height: 1080, // 为了更好的适配不同尺寸图片建议传入宽高，不传也有兜底尺寸
@@ -133,7 +133,7 @@ export default {
                 fileType: 'image',
                 name: 'avatar2.jpg',
                 size: 234234,
-                url: 'https://tdesign.gtimg.com/demo/demo-image-1.png',
+                url: '/static/offline/demo/demo-image-1.png',
                 width: 1920,
                 // 图片实际宽度
                 height: 1080, // 图片实际高度

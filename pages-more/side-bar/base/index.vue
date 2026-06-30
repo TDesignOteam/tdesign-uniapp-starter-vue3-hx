@@ -42,7 +42,7 @@ import TGridItem from '../../../uni_modules/tdesign-uniapp/components/grid-item/
 import TSideBar from '../../../uni_modules/tdesign-uniapp/components/side-bar/side-bar.vue';
 import TSideBarItem from '../../../uni_modules/tdesign-uniapp/components/side-bar-item/side-bar-item.vue';
 
-const image = 'https://tdesign.gtimg.com/mobile/demos/example2.png';
+const image = '/static/offline/mobile/demos/example2.png';
 const items = new Array(12).fill().map((_, index) => ({
   label: index % 3 === 2 ? '最多六个文字' : '标题文字',
   image,

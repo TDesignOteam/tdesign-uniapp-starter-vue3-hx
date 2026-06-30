@@ -22,19 +22,19 @@ import TButton from '../../../uni_modules/tdesign-uniapp/components/button/butto
 const firstGrid = [
   {
     label: '微信',
-    image: 'https://tdesign.gtimg.com/mobile/demos/wechat.png',
+    image: '/static/offline/mobile/demos/wechat.png',
   },
   {
     label: '朋友圈',
-    image: 'https://tdesign.gtimg.com/mobile/demos/times.png',
+    image: '/static/offline/mobile/demos/times.png',
   },
   {
     label: 'QQ',
-    image: 'https://tdesign.gtimg.com/mobile/demos/qq.png',
+    image: '/static/offline/mobile/demos/qq.png',
   },
   {
     label: '企业微信',
-    image: 'https://tdesign.gtimg.com/mobile/demos/wecom.png',
+    image: '/static/offline/mobile/demos/wecom.png',
   },
   {
     label: '收藏',

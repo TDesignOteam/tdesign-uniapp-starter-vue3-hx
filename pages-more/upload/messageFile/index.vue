@@ -22,7 +22,7 @@ export default {
     return {
       originFiles: [
         {
-          url: 'https://tdesign.gtimg.com/mobile/demos/example4.png',
+          url: '/static/offline/mobile/demos/example4.png',
           name: 'uploaded1.png',
           type: 'image',
         },

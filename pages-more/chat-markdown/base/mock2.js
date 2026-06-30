@@ -64,7 +64,7 @@ def hello():
 | 长文本示例| 长文本示例长文本示例长文本示例 |   $100 | 文本内容 |
 | 文本示例 | 文本内容 | $100 |  文本内容 |
 
-![示例](https://tdesign.gtimg.com/demo/demo-image-1.png "示例")
+![示例](/static/offline/demo/demo-image-1.png "示例")
 
 ### 其他元素
 

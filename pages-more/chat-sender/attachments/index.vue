@@ -73,7 +73,7 @@ export default {
         {
           fileType: 'image',
           name: '图片1.png',
-          url: 'https://tdesign.gtimg.com/site/square.png',
+          url: '/static/offline/site/square.png',
         },
         {
           fileType: 'pdf',
@@ -96,7 +96,7 @@ export default {
           {
             fileType: 'image',
             name: '图片1.png',
-            url: 'https://tdesign.gtimg.com/site/square.png',
+            url: '/static/offline/site/square.png',
           },
           {
             fileType: 'pdf',

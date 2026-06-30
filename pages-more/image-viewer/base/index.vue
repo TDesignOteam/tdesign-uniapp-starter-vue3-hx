@@ -42,8 +42,8 @@ export default {
   methods: {
     onClick() {
       this.images = [
-        'https://tdesign.gtimg.com/mobile/demos/swiper1.png',
-        'https://tdesign.gtimg.com/mobile/demos/swiper2.png',
+        '/static/offline/mobile/demos/swiper1.png',
+        '/static/offline/mobile/demos/swiper2.png',
       ];
       this.showIndex = true;
       this.visible = true;

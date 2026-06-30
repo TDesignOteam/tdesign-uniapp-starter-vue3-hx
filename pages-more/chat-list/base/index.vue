@@ -114,7 +114,7 @@ export default {
 
       chatList: [
         {
-          avatar: 'https://tdesign.gtimg.com/site/chat-avatar.png',
+          avatar: '/static/offline/site/chat-avatar.png',
           role: 'assistant',
           status: 'complete',
           chatId: getUniqueKey(),
@@ -260,7 +260,7 @@ export default {
             data: '',
           },
         ],
-        avatar: 'https://tdesign.gtimg.com/site/chat-avatar.png',
+        avatar: '/static/offline/site/chat-avatar.png',
         status: 'pending',
       };
       this.chatList = [assistantMessage, ...this.chatList];

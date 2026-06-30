@@ -21,7 +21,7 @@
       @cancel="closeDialog"
     >
       <template #top>
-        <t-image t-class="dialog-image" src="https://tdesign.gtimg.com/mobile/demos/dialog1.png" />
+        <t-image t-class="dialog-image" src="/static/offline/mobile/demos/dialog1.png" />
       </template>
     </t-dialog>
 
@@ -45,7 +45,7 @@
       @cancel="closeDialog"
     >
       <template #top>
-        <t-image t-class="dialog-image" src="https://tdesign.gtimg.com/mobile/demos/dialog1.png" />
+        <t-image t-class="dialog-image" src="/static/offline/mobile/demos/dialog1.png" />
       </template>
     </t-dialog>
 
@@ -69,7 +69,7 @@
       @cancel="closeDialog"
     >
       <template #top>
-        <t-image t-class="dialog-image" src="https://tdesign.gtimg.com/mobile/demos/dialog1.png" />
+        <t-image t-class="dialog-image" src="/static/offline/mobile/demos/dialog1.png" />
       </template>
     </t-dialog>
 
@@ -92,7 +92,7 @@
       @cancel="closeDialog"
     >
       <template #top>
-        <t-image t-class="dialog-image" src="https://tdesign.gtimg.com/mobile/demos/dialog1.png" />
+        <t-image t-class="dialog-image" src="/static/offline/mobile/demos/dialog1.png" />
       </template>
     </t-dialog>
 
@@ -117,7 +117,7 @@
       @cancel="closeDialog"
     >
       <template #middle>
-        <t-image t-class="image-host dialog-image" src="https://tdesign.gtimg.com/mobile/demos/dialog1.png" />
+        <t-image t-class="image-host dialog-image" src="/static/offline/mobile/demos/dialog1.png" />
       </template>
     </t-dialog>
 
@@ -141,7 +141,7 @@
       @cancel="closeDialog"
     >
       <template #middle>
-        <t-image t-class="image-host dialog-image" src="https://tdesign.gtimg.com/mobile/demos/dialog1.png" />
+        <t-image t-class="image-host dialog-image" src="/static/offline/mobile/demos/dialog1.png" />
       </template>
     </t-dialog>
   </view>

@@ -1,6 +1,6 @@
 <template>
   <view>
-    <t-result t-class-image="external-class-image" image="https://tdesign.gtimg.com/mobile/demos/result1.png">
+    <t-result t-class-image="external-class-image" image="/static/offline/mobile/demos/result1.png">
       <template #title>
         <view> 自定义结果 </view>
       </template>
