@@ -61,7 +61,11 @@ function shouldExclude(filepath) {
 /** 判断 URL 资源类型 */
 function classifyUrl(url) {
   const lower = url.toLowerCase().replace(/[?#].*$/, "");
-  if (/\.(eot|woff2?|ttf|otf)$/.test(lower)) return "font";
+  // EOT 字体：现代浏览器完全不支持（仅 IE9- 需要），
+  // 内嵌为 base64 会触发 "OTS parsing error: invalid sfntVersion" 报错。
+  // 标记为 skip，主流程会直接将其从原 src 列表中剔除。
+  if (/\.eot$/.test(lower)) return "font-eot-skip";
+  if (/\.(woff2?|ttf|otf)$/.test(lower)) return "font";
   if (/\.svg$/.test(lower) && lower.includes("/fonts/")) return "font";
   if (/\.(png|jpe?g|gif|webp|ico|bmp|svg)$/.test(lower)) return "image";
   if (/\.(mp3|mp4|wav|ogg)$/.test(lower)) return "media";
@@ -238,6 +242,7 @@ async function main() {
   const fontUrls = [];
   const imageUrls = [];
   const baseUrls = [];
+  const eotUrls = []; // EOT 字体：现代浏览器不支持，会从 CSS 中剔除
 
   for (const url of uniqueUrls) {
     const type = classifyUrl(url);
@@ -246,24 +251,29 @@ async function main() {
     const label =
       type === "font"
         ? "🔤"
-        : type === "image"
-          ? "🖼️"
-          : type === "base"
-            ? "🏠"
-            : "📦";
+        : type === "font-eot-skip"
+          ? "🚫"
+          : type === "image"
+            ? "🖼️"
+            : type === "base"
+              ? "🏠"
+              : "📦";
     const dupInfo = dedup > 1 ? ` [复用 ${dedup} 次]` : "";
-    console.log(`  ${label} ${url}${dupInfo}`);
+    const skipNote =
+      type === "font-eot-skip" ? " [EOT-跳过，从 CSS 中剔除]" : "";
+    console.log(`  ${label} ${url}${dupInfo}${skipNote}`);
     for (const f of files) {
       console.log(`     └─ ${f.relPath}`);
     }
     console.log("");
     if (type === "font") fontUrls.push(url);
+    else if (type === "font-eot-skip") eotUrls.push(url);
     else if (type === "image") imageUrls.push(url);
     else if (type === "base") baseUrls.push(url);
   }
 
   console.log(
-    `  统计: 字体 ${fontUrls.length} | 图片 ${imageUrls.length} | 基路径 ${baseUrls.length}\n`,
+    `  统计: 字体 ${fontUrls.length} | EOT-跳过 ${eotUrls.length} | 图片 ${imageUrls.length} | 基路径 ${baseUrls.length}\n`,
   );
 
   if (dryRun) {
@@ -273,12 +283,25 @@ async function main() {
 
   // ── 4. 下载资源（每个 URL 只下一次，base 类型跳过） ──
   console.log("📥 下载资源...\n");
-  const urlResult = new Map(); // url → { buffer, localPath, dataUri }
+  const urlResult = new Map(); // url → { buffer, localPath, dataUri, eotSkip }
 
   for (const url of uniqueUrls) {
     const type = classifyUrl(url);
     const localPath = makeLocalPath(url);
     const absLocalPath = path.join(ROOT, localPath);
+
+    // EOT 字体：现代浏览器不支持，跳过下载，并标记为需从 CSS 中清理
+    if (type === "font-eot-skip") {
+      urlResult.set(url, {
+        buffer: null,
+        localPath: null,
+        dataUri: null,
+        type,
+        eotSkip: true,
+      });
+      console.log(`  🚫 ${url} (EOT，跳过下载)`);
+      continue;
+    }
 
     // CDN 基路径：不下载，直接替换为本地路径
     if (type === "base") {
@@ -323,6 +346,40 @@ async function main() {
 
   for (const [url, result] of urlResult) {
     if (!result) continue;
+
+    // EOT：直接从 CSS 中剔除整段 url(...) [format('...')]?
+    // 同时清理其前/后多余的逗号空白，避免 src: , url(...) 这种语法错误。
+    if (result.eotSkip) {
+      const targetFiles = urlFiles.get(url) || [];
+      for (const file of targetFiles) {
+        let content = allFilesMap.get(file.absPath);
+        if (content === undefined) {
+          content = fs.readFileSync(file.absPath, "utf-8");
+          allFilesMap.set(file.absPath, content);
+        }
+        if (!content.includes(url)) continue;
+
+        // 转义 url 用于正则，匹配 url('xxx.eot[?#iefix]') 及其后可选的 format(...)
+        const escUrl = url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        // 形如：url('xxx.eot') 或 url('xxx.eot?#iefix')，可能后跟 format('...')
+        const eotEntryRe = new RegExp(
+          `url\\(['\"]?${escUrl}(?:\\?#iefix)?['\"]?\\)(\\s*format\\(['\"][^'\"]+['\"]\\))?`,
+          "g",
+        );
+        let newContent = content.replace(eotEntryRe, "");
+        // 清理因移除留下的多余逗号：",   ," → ","； "src:   ," → "src: "；末尾 ", ;" → ";"
+        newContent = newContent
+          .replace(/,\s*,/g, ",")
+          .replace(/(src\s*:)\s*,\s*/gi, "$1 ")
+          .replace(/,\s*;/g, ";");
+
+        if (newContent !== content) {
+          allFilesMap.set(file.absPath, newContent);
+          modified.add(file.relPath);
+        }
+      }
+      continue;
+    }
 
     const replacement = result.dataUri || result.localPath;
     if (!replacement) continue;
