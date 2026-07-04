@@ -3,7 +3,7 @@
     "appid" : "__UNI__E000021",
     "description" : "TDesign 组件库",
     "versionName" : "0.10.1",
-    "versionCode" : "1001",
+    "versionCode" : "1002",
     "transformPx" : false,
     "app-plus" : {
         "usingComponents" : true,
@@ -37,11 +37,17 @@
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
                     "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
                 ],
-                "schemes" : "tdesignUniapp,tdesign_uniapp,tdesignuniapp"
+                "schemes" : "tdesignUniapp,tdesignuniapp"
             },
             "ios" : {
                 "dSYMs" : false,
-                "urltypes" : "tdesignUniapp,tdesign_uniapp,tdesignuniapp"
+                "urltypes" : "tdesignUniapp,tdesignuniapp",
+                "idfa" : false,
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "上传图片组件示例用",
+                    "NSPhotoLibraryAddUsageDescription" : "图片组件示例用",
+                    "NSCameraUsageDescription" : "上传图片组件示例用"
+                }
             },
             "sdkConfigs" : {},
             "icons" : {
