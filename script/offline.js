@@ -61,12 +61,13 @@ function shouldExclude(filepath) {
 /** 判断 URL 资源类型 */
 function classifyUrl(url) {
   const lower = url.toLowerCase().replace(/[?#].*$/, "");
-  // EOT 字体：现代浏览器完全不支持（仅 IE9- 需要），
-  // 内嵌为 base64 会触发 "OTS parsing error: invalid sfntVersion" 报错。
-  // 标记为 skip，主流程会直接将其从原 src 列表中剔除。
-  if (/\.eot$/.test(lower)) return "font-eot-skip";
-  if (/\.(woff2?|ttf|otf)$/.test(lower)) return "font";
-  if (/\.svg$/.test(lower) && lower.includes("/fonts/")) return "font";
+  // 只保留 .woff，其余字体格式全部跳过（减少包体积）：
+  // - EOT：现代浏览器完全不支持（仅 IE9- 需要），内嵌 base64 还会报 "OTS parsing error"
+  // - WOFF2/TTF/OTF：woff 已能覆盖所有现代浏览器，保留多格式纯属冗余
+  // - SVG 字体：已废弃，仅旧版 iOS Safari 需要
+  if (/\.(eot|woff2|ttf|otf)$/.test(lower)) return "font-skip";
+  if (/\.svg$/.test(lower) && lower.includes("/fonts/")) return "font-skip";
+  if (/\.woff$/.test(lower)) return "font";
   if (/\.(png|jpe?g|gif|webp|ico|bmp|svg)$/.test(lower)) return "image";
   if (/\.(mp3|mp4|wav|ogg)$/.test(lower)) return "media";
   // 无扩展名 → CDN 基路径（如 https://tdesign.gtimg.com/mobile/demos）
@@ -251,7 +252,7 @@ async function main() {
     const label =
       type === "font"
         ? "🔤"
-        : type === "font-eot-skip"
+        : type === "font-skip"
           ? "🚫"
           : type === "image"
             ? "🖼️"
@@ -260,14 +261,14 @@ async function main() {
               : "📦";
     const dupInfo = dedup > 1 ? ` [复用 ${dedup} 次]` : "";
     const skipNote =
-      type === "font-eot-skip" ? " [EOT-跳过，从 CSS 中剔除]" : "";
+      type === "font-skip" ? " [EOT-跳过，从 CSS 中剔除]" : "";
     console.log(`  ${label} ${url}${dupInfo}${skipNote}`);
     for (const f of files) {
       console.log(`     └─ ${f.relPath}`);
     }
     console.log("");
     if (type === "font") fontUrls.push(url);
-    else if (type === "font-eot-skip") eotUrls.push(url);
+    else if (type === "font-skip") eotUrls.push(url);
     else if (type === "image") imageUrls.push(url);
     else if (type === "base") baseUrls.push(url);
   }
@@ -291,7 +292,7 @@ async function main() {
     const absLocalPath = path.join(ROOT, localPath);
 
     // EOT 字体：现代浏览器不支持，跳过下载，并标记为需从 CSS 中清理
-    if (type === "font-eot-skip") {
+    if (type === "font-skip") {
       urlResult.set(url, {
         buffer: null,
         localPath: null,
