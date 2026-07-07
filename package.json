@@ -16,10 +16,10 @@
   "description": "",
   "dependencies": {
     "@babel/runtime": "^8.0.0",
-    "t-comm": "^3.3.0"
+    "t-comm": "^3.3.15"
   },
   "devDependencies": {
-    "@plugin-light/vite-plugin-gen-version": "1.0.2-beta.0",
+    "@plugin-light/vite-plugin-gen-version": "1.0.2",
     "chokidar": "^3.6.0",
     "eslint-config-light": "^1.5.3"
   }

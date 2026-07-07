@@ -2,7 +2,7 @@
   "name": "tdesign-uniapp",
   "id": "tdesign-uniapp",
   "displayName": "TDesign Uniapp",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "author": "novlan1",
   "title": "tdesign-uniapp",
   "description": "TDesign Component for uniapp",
@@ -11,7 +11,7 @@
     "miniprogram",
     "uniapp",
     "vue"
-  ],
+],
   "homepage": "https://tdesign.tencent.com/uniapp/",
   "bugs": {
     "url": "https://github.com/Tencent/tdesign-miniprogram/issues"
