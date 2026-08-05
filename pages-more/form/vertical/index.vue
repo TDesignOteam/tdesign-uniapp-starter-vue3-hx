@@ -223,12 +223,12 @@ export default {
         resume: '',
         photo: [
           {
-            url: '/static/offline/mobile/demos/example4.png',
+            url: 'https://tdesign.gtimg.com/mobile/demos/example4.png',
             name: 'uploaded1.png',
             type: 'image',
           },
           {
-            url: '/static/offline/mobile/demos/example6.png',
+            url: 'https://tdesign.gtimg.com/mobile/demos/example6.png',
             name: 'uploaded2.png',
             type: 'image',
           },

@@ -28,20 +28,20 @@ export default {
       globalConfig: enUS,
       originFiles: [
         {
-          url: '/static/offline/mobile/demos/example4.png',
+          url: 'https://tdesign.gtimg.com/mobile/demos/example4.png',
           name: 'uploaded1.png',
           type: 'image',
           status: 'loading',
         },
         {
-          url: '/static/offline/mobile/demos/example5.png',
+          url: 'https://tdesign.gtimg.com/mobile/demos/example5.png',
           name: 'uploaded2.png',
           type: 'image',
           percent: 68,
           status: 'loading',
         },
         {
-          url: '/static/offline/mobile/demos/example5.png',
+          url: 'https://tdesign.gtimg.com/mobile/demos/example5.png',
           name: 'uploaded4.png',
           type: 'image',
           status: 'failed',

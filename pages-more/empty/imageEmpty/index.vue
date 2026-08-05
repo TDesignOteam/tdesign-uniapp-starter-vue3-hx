@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      image: '/static/offline/mobile/demos/empty1.png',
+      image: 'https://tdesign.gtimg.com/mobile/demos/empty1.png',
     };
   },
   created() {},

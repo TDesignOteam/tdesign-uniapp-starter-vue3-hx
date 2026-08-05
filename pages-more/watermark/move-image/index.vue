@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      watermark: { url: '/static/offline/site/baseLogo-light.png' },
+      watermark: { url: 'https://tdesign.gtimg.com/site/baseLogo-light.png' },
     };
   },
 };

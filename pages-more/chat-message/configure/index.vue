@@ -5,7 +5,7 @@
     </view>
     <view class="chat-example-block">
       <t-chat-message
-        avatar="/static/offline/site/chat-avatar.png"
+        avatar="https://tdesign.gtimg.com/site/chat-avatar.png"
         datetime="16:38"
         name="TDesignAI"
         :content="message.content"
@@ -14,7 +14,7 @@
     </view>
     <view class="chat-example-block">
       <t-chat-message
-        avatar="/static/offline/site/chat-avatar.png"
+        avatar="https://tdesign.gtimg.com/site/chat-avatar.png"
         datetime="16:38"
         name="TDesignAI"
         :content="message.content"

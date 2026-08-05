@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      image: '/static/offline/mobile/demos/avatar1.png',
+      image: 'https://tdesign.gtimg.com/mobile/demos/avatar1.png',
     };
   },
   created() {},

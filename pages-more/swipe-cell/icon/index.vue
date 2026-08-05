@@ -14,7 +14,7 @@
         title="左滑大列表-仅带图标双操作"
         description="一段很长很长的内容文字"
         note="辅助信息"
-        image="/static/offline/mobile/demos/avatar1.png"
+        image="https://tdesign.gtimg.com/mobile/demos/avatar1.png"
       />
       <template #right>
         <view class="btn-wrapper">

@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       watermark: {
-        url: '/static/offline/starter/brand-logo-light.png',
+        url: 'https://tdesign.gtimg.com/starter/brand-logo-light.png',
         isGrayscale: true,
       },
     };

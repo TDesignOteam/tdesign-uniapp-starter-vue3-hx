@@ -71,7 +71,7 @@ const getUniqueKey = () => {
 };
 
 const mockData = {
-  avatar: '/static/offline/site/chat-avatar.png',
+  avatar: 'https://tdesign.gtimg.com/site/chat-avatar.png',
   chatContentProps: {
     thinking: {
       animation: 'gradient',
@@ -134,7 +134,7 @@ export default {
 
       chatList: [
         {
-          avatar: '/static/offline/site/chat-avatar.png',
+          avatar: 'https://tdesign.gtimg.com/site/chat-avatar.png',
           chatContentProps: {
             thinking: {
               animation: 'gradient',

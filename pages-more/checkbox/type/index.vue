@@ -21,8 +21,8 @@ export default {
   data() {
     return {
       demoCheckbox2: ['checkbox2', 'checkbox3'],
-      activeImage: '/static/offline/mobile/demos/checkbox-checked.png',
-      inActiveImage: '/static/offline/mobile/demos/checkbox.png',
+      activeImage: 'https://tdesign.gtimg.com/mobile/demos/checkbox-checked.png',
+      inActiveImage: 'https://tdesign.gtimg.com/mobile/demos/checkbox.png',
     };
   },
   created() {},

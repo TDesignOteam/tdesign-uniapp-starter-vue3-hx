@@ -18,7 +18,7 @@ export default {
         {
           fileType: 'image',
           name: 'sample-image.jpg',
-          url: '/static/offline/site/avatar.jpg',
+          url: 'https://tdesign.gtimg.com/site/avatar.jpg',
           size: 1024,
           status: 'success',
         },

@@ -11,7 +11,7 @@
     "miniprogram",
     "uniapp",
     "vue"
-],
+  ],
   "homepage": "https://tdesign.tencent.com/uniapp/",
   "bugs": {
     "url": "https://github.com/Tencent/tdesign-miniprogram/issues"

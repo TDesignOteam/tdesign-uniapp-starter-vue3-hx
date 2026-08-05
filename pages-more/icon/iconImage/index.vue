@@ -15,8 +15,8 @@ export default {
   data() {
     return {
       imageIconList: [
-        '/static/offline/mobile/demos/icon1.png',
-        '/static/offline/mobile/demos/icon2.png',
+        'https://tdesign.gtimg.com/mobile/demos/icon1.png',
+        'https://tdesign.gtimg.com/mobile/demos/icon2.png',
       ],
     };
   },

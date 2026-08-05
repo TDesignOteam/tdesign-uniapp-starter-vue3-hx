@@ -51,7 +51,7 @@ import TImage from '../../../uni_modules/tdesign-uniapp/components/image/image.v
 import TSideBar from '../../../uni_modules/tdesign-uniapp/components/side-bar/side-bar.vue';
 import TSideBarItem from '../../../uni_modules/tdesign-uniapp/components/side-bar-item/side-bar-item.vue';
 
-const image = '/static/offline/mobile/demos/example2.png';
+const image = 'https://tdesign.gtimg.com/mobile/demos/example2.png';
 const items = new Array(12).fill(
   {
     label: '标题文字',

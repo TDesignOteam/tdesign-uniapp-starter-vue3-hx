@@ -48,7 +48,7 @@
           <template #extra>
             <view v-if="index == 1">
               <image
-                src="/static/offline/mobile/demos/steps1.png"
+                src="https://tdesign.gtimg.com/mobile/demos/steps1.png"
                 alt="图标"
                 style="width: 100%"
                 mode="widthFix"
