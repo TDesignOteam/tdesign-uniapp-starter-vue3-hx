@@ -2,8 +2,8 @@
     "name" : "TDesign Uniapp",
     "appid" : "__UNI__E000021",
     "description" : "TDesign 组件库",
-    "versionName" : "1.0.1",
-    "versionCode" : "10001",
+    "versionName" : "1.0.2",
+    "versionCode" : 10010,
     "transformPx" : false,
     "app-plus" : {
         "usingComponents" : true,
