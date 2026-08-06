@@ -1,0 +1,1 @@
+import{af as t,N as o}from"./index-y1j6yHRc.js";function s(s){const{context:n,selector:e="#t-toast",...a}=s,c=t(n,e);c&&c.show({...a,duration:o(a.duration,2e3)})}function n(o={}){const{context:s,selector:n="#t-toast"}=o,e=t(s,n);e&&e.hide()}export{s as T,n as h};
