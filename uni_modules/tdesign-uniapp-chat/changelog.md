@@ -1,3 +1,8 @@
+## 1.0.0（2026-10-16）
+### Bug Fixes
+
+- `ChatRecord`: 修复类型引入路径错误问题 @novlan1 ([#4598](https://github.com/Tencent/tdesign-miniprogram/pull/4598))
+
 ## 0.3.0（2026-08-06）
 ### Features
 
